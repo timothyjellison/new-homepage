@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: minmax(10px, auto) [column-start] minmax(auto, 1180px) [column-end] minmax(10px, auto);
   grid-template-rows: 220px 60px auto 100px;
+  min-height: 100vh;
 }
 
 .layout * {
