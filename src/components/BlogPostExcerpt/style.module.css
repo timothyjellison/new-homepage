@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+
+.title {
+  font-family: Oswald;
+  font-size: 2em;
+}
+
+.date {
+  color: #aaa;
+}

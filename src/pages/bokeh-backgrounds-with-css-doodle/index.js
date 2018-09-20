@@ -4,7 +4,7 @@ import CodePen from '../../components/CodePen';
 
 export default () => {
   return (
-    <div>
+    <div style={{fontSize: '1.5em', lineHeight: '1.3'}}>
       <p>I’ve been obsessing over this ultra-cool <a href="https://css-doodle.com/" target="blank"><code>&lt;css-doodle /&gt;</code></a> web component. It makes it so easy to generate fun and beautiful graphics for websites. I was playing around with one of the samples <a href="https://css-doodle.com/#usage" target="blank">in the docs</a> and came up with this cool pattern for creating a <a href="https://en.wikipedia.org/wiki/Bokeh" target="_blank">bokeh</a> background. I’ll walk you through it 😃 The final product will look like this:</p>
       <CodePen uid='qYeQBX' title='Bokeh Background with CSS Doodle' />
       <p>First we add a <code>&lt;css-doodle&gt;</code> component to our html. Throughout the tutorial we’ll add CSS properties inside this component. Using the :doodle selector we divide the doodle into a 12 by 12 grid, stretch it across the whole viewport, and give it a dark blue background color. Just for illustration purposes I’ve added an outline property so you can see the edges of the empty grid cells.</p>

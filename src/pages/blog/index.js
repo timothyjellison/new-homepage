@@ -9,7 +9,7 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div className="blog-page">
+      <div className="blog-page" style={{maxWidth: '500px', margin: '0 auto'}}>
         <Helmet title={siteTitle} />
         {posts.map(({ node }) =>
           <BlogPostExcerpt

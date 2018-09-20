@@ -10,7 +10,7 @@ export default (props) => {
       frameborder='no'
       allowtransparency='true'
       allowfullscreen='true'
-      style={{width: '100%'}}
+      style={{width: '100%', marginBottom: '1.5em'}}
     >See the Pen <a href={`https://codepen.io/timothyjellison/pen/${props.uid}/`}>{props.title}</a> by Tim Ellison (<a href='https://codepen.io/timothyjellison'>@timothyjellison</a>) on <a href='https://codepen.io'>CodePen</a>.
     </iframe>
   );
