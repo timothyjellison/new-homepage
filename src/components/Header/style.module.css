@@ -1,0 +1,16 @@
+.header {
+  font-family: Oswald;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.link {
+  color: #333333;
+  text-decoration: none;
+}
+
+.name {
+  margin-bottom: 10px;
+}
