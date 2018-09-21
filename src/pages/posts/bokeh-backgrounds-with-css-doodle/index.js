@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react';
-import Template from '../../layouts/index';
-import CodePen from '../../components/CodePen';
+import CodePen from '../../../components/CodePen';
 
 export default () => {
   return (

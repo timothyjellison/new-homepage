@@ -22,7 +22,7 @@ class BlogIndex extends React.Component {
 
         {/* hardcoding in this one exception to the default blog flow */}
         <BlogPostExcerpt
-          url={"/bokeh-backgrounds-with-css-doodle/"}
+          url={"/posts/bokeh-backgrounds-with-css-doodle/"}
           title={"Bokeh Backgrounds With CSS Doodle"}
           date={"05/27/18"}
           excerpt={""}

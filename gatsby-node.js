@@ -10,7 +10,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     fromPath: '/2018/05/27/bokeh-backgrounds-with-css-doodle/',
     isPermanent: true,
     redirectInBrowser: true,
-    toPath: '/bokeh-backgrounds-with-css-doodle/'
+    toPath: '/posts/bokeh-backgrounds-with-css-doodle/'
   });
 
   return new Promise((resolve, reject) => {
