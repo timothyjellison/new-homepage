@@ -19,6 +19,14 @@ class BlogIndex extends React.Component {
             excerpt={node.excerpt}
           />
         )}
+
+        {/* hardcoding in this one exception to the default blog flow */}
+        <BlogPostExcerpt
+          url={"/bokeh-backgrounds-with-css-doodle/"}
+          title={"Bokeh Backgrounds With CSS Doodle"}
+          date={"05/27/18"}
+          excerpt={""}
+        />
       </div>
     )
   }
