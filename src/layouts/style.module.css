@@ -5,6 +5,18 @@
   min-height: 100vh;
 }
 
-.layout * {
+.layout > * {
   grid-column: column-start / column-end;
+}
+
+.mainContent {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  display: grid;
+  grid-template-columns: minmax(2em, auto) [content-start] minmax(auto, 800px) [content-end] minmax(2em, auto);
+  background-color: #ffffff;
+}
+
+.mainContent > * {
+  grid-column: content-start / content-end
 }

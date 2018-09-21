@@ -9,7 +9,7 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div className="blog-page" style={{maxWidth: '500px', margin: '0 auto'}}>
+      <div className="blog-page">
         <Helmet title={siteTitle} />
         {posts.map(({ node }) =>
           <BlogPostExcerpt
@@ -41,7 +41,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MM/DD/YY")
             title
           }
         }

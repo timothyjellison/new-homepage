@@ -15,10 +15,7 @@ class Template extends React.Component {
       <div className={styles.layout}>
         <Header />
         <NavBar />
-        <main style={{
-          backgroundColor: 'white',
-          padding: '3em'
-        }}>{children()}</main>
+        <main className={styles.mainContent}>{children()}</main>
         <Footer />
       </div>
     )
