@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Tim Ellison: User Interface Engineer',
-    author: 'Tim Ellison'
+    author: 'Tim Ellison',
+    role: 'User Interface Engineer'
   },
   pathPrefix: '/gatsby-starter-blog',
   plugins: [

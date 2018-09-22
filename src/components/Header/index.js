@@ -2,16 +2,12 @@ import React from 'react';
 import Link from 'gatsby-link'
 import styles from './style.module.css';
 
-export default () => {
+export default (props) => {
   return (
     <header className={styles.header}>
       <Link to={'/'} className={styles.link}>
-        <h1 className={styles.name}>
-          TIM ELLISON
-        </h1>
-        <h2>
-          FRONT-END WEB DEVELOPER
-        </h2>
+        <h1 className={styles.name}>{props.author}</h1>
+        <h2>{props.role}</h2>
       </Link>
     </header>
   );

@@ -1,15 +1,16 @@
 .header {
-  font-family: Oswald;
-  display: flex;
-  justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  display: flex;
+  font-family: Oswald;
+  justify-content: center;
 }
 
 .link {
+  border-bottom: none; /* to counteract the global style */
   color: #333333;
   text-decoration: none;
-  border-bottom: none; /* to counteract the global style */
+  text-transform: uppercase;
 }
 
 .name {

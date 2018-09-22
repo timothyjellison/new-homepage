@@ -14,13 +14,13 @@ import Footer from '../components/Footer';
 class Template extends React.Component {
   render() {
     const { children } = this.props
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const {author, role} = get(this, 'props.data.site.siteMetadata')
 
     return (
       <div>
-        <Helmet title={siteTitle} />
+        <Helmet title={`${author}: ${role}`} />
         <div className={styles.layout}>
-          <Header />
+          <Header author={author} role={role}/>
           <NavBar />
           <main className={styles.mainContent}>{children()}</main>
           <Footer />
@@ -34,7 +34,8 @@ export const pageQuery = graphql`
   query TemplateQuery {
     site {
       siteMetadata {
-        title
+        author
+        role
       }
     }
   }
