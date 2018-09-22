@@ -3,18 +3,16 @@
   flex-direction: column;
 }
 
-.home-page p {
-  font-size: 2rem;
-  line-height: 1.3;
+.profile-pic-container {
+  order: 4;
+  margin: 0 auto;
 }
 
 .profile-pic {
-  order: 4;
   border-radius: 50%;
   border: 1em solid white;
   max-width: 300px;
   width: 100%;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 650px) {
@@ -22,7 +20,7 @@
     display: block;
   }
 
-  .profile-pic {
+  .profile-pic-container {
     float: right;
     margin: 0;
   }

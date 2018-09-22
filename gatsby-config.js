@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Tim Ellison: Front-End Web Developer',
+    title: 'Tim Ellison: User Interface Engineer',
     author: 'Tim Ellison'
   },
   pathPrefix: '/gatsby-starter-blog',

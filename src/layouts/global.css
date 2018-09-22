@@ -6,8 +6,19 @@ body {
   background-color: #f0f0f0;
 }
 
-h1 {font-size: 3.5em;}
-h2 {font-size: 2em;}
-h3, h4, h5, h6 {font-size: 1.5em;}
+h1 {font-size: 3.5rem;}
+h2 {font-size: 2rem;}
+h3, h4, h5, h6 {font-size: 1.5rem;}
 
-p {margin-bottom: 1em;}
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #0d86a2;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px dashed #0d86a2;
+}
