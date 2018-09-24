@@ -1,10 +1,14 @@
 import React from 'react';
 import styles from "./style.module.css"
 
-export default () => {
-  return (
-    <footer className={styles.footer}>
-      Tim Ellison &copy; 2018
-    </footer>
-  );
+class Footer extends React.PureComponent {
+  render() {
+    return (
+      <footer className={styles.footer}>
+        Tim Ellison &copy; 2018
+      </footer>
+    );
+  }
 };
+
+export default Footer;

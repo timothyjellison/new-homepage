@@ -3,7 +3,7 @@ import get from 'lodash/get'
 import BlogPostExcerpt from '../../components/BlogPostExcerpt';
 import PageTransition from 'gatsby-plugin-page-transitions';
 
-class BlogIndex extends React.Component {
+class BlogIndex extends React.PureComponent {
   render() {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
