@@ -7,7 +7,10 @@ body {
 }
 
 h1 {font-size: 3.5rem;}
-h2 {font-size: 2rem;}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
 h3, h4, h5, h6 {font-size: 1.5rem;}
 
 p {
@@ -21,4 +24,13 @@ a {
   text-decoration: none;
   font-weight: bold;
   border-bottom: 1px dashed #0d86a2;
+}
+
+/* override the code highlighting font size */
+.gatsby-highlight, .language-text {
+  font-size: 1rem;
+}
+
+.gatsby-highlight {
+  margin-bottom: 1em;
 }

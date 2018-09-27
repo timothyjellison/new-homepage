@@ -1,32 +1,29 @@
 import React from 'react'
 import get from 'lodash/get'
 import BlogPostExcerpt from '../../components/BlogPostExcerpt';
-import PageTransition from 'gatsby-plugin-page-transitions';
 
 class BlogIndex extends React.PureComponent {
   render() {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <PageTransition>
-        <div className="blog-page">
-          {posts.map(({ node }) =>
-            <BlogPostExcerpt
-              url={node.fields.slug}
-              title={get(node, 'frontmatter.title') || node.fields.slug}
-              date={node.frontmatter.date}
-              key={node.fields.slug}
-            />
-          )}
-
-          {/* hardcoding in this one exception to the default blog flow */}
+      <div className="blog-page">
+        {posts.map(({ node }) =>
           <BlogPostExcerpt
-            url={"/posts/bokeh-backgrounds-with-css-doodle/"}
-            title={"Bokeh Backgrounds With CSS Doodle"}
-            date={"05/27/18"}
+            url={node.fields.slug}
+            title={get(node, 'frontmatter.title') || node.fields.slug}
+            date={node.frontmatter.date}
+            key={node.fields.slug}
           />
-        </div>
-      </PageTransition>
+        )}
+
+        {/* hardcoding in this one exception to the default blog flow */}
+        <BlogPostExcerpt
+          url={"/posts/bokeh-backgrounds-with-css-doodle/"}
+          title={"Bokeh Backgrounds With CSS Doodle"}
+          date={"05/27/18"}
+        />
+      </div>
     )
   }
 }

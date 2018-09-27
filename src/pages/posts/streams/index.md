@@ -1,6 +1,6 @@
 ---
 title: Streams, Chunks, & Buffers
-date: "2018-09-20T22:12:03.284Z"
+date: "2018-09-27T22:12:03.284Z"
 ---
 
 Streams are one of Node's most powerful features, but (like so much in computer science) they're victims of their own counterintuitive vocabulary. *Streams* process *chunks* of data in the form of *Buffers*.
