@@ -14,8 +14,8 @@ class BlogIndex extends React.PureComponent {
             <source srcSet={`${profileUrlStub}.png`} type="image/png"/>
             <img className="profile-pic" src={`${profileUrlStub}.png`} alt="Selfie of Tim Ellison"/>
           </picture>
-          <p>Hi! I'm Tim, a User Interface Engineer. I love building things with HTML, CSS, and JavaScript — everything from apps to websites to emails and even eBooks.</p>
-          <p>I’m available for consultation and small-scale projects, just <Link to="https://twitter.com/timothyjellison">send me a note on Twitter</Link>.</p>
+          <p>Heya 👋 I'm Tim, a UI engineer at <a href="https://www.netflix.com" target="_blank" rel="noreferrer">Netflix</a>.</p>
+          <p>I'm interested in linguistic/literary technologies like NLP 🗣️, Unicode 🔣, bots 🤖, and emoji 🚀, plus topics at the boundaries of the verbal like music 🎵 and poetry 📚.</p>
         </div>
       </div>
     )
