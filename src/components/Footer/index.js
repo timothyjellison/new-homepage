@@ -5,7 +5,7 @@ class Footer extends React.PureComponent {
   render() {
     return (
       <footer className={styles.footer}>
-        Tim Ellison &copy; 2018
+        Tim Ellison &copy; 2019
       </footer>
     );
   }
