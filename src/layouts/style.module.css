@@ -10,13 +10,61 @@
 }
 
 .mainContent {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: minmax(2em, auto) [content-start] minmax(auto, 800px) [content-end] minmax(2em, auto);
-  background-color: #ffffff;
+  padding-bottom: 3em;
+  padding-top: 3em;
 }
 
 .mainContent > * {
   grid-column: content-start / content-end
+}
+
+.header {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  font-family: Oswald;
+  justify-content: center;
+}
+
+.header .link {
+  border-bottom: none; /* to counteract the global style */
+  color: #333333;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.name {
+  margin-bottom: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d86a2;
+  color: white;
+  border-bottom: 2px solid rgba(0,0,0,0.15);
+  font-size: 1.2em;
+}
+
+.nav .link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav .link:first-of-type {
+  margin-right: 2em;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #999999;
 }
