@@ -1,13 +1,13 @@
 import React from 'react'
 import './index.css';
-import Link from '../components/Link';
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 const profileUrlStub = "https://res.cloudinary.com/dzwa7qhj1/image/upload/c_scale,e_grayscale,w_300/v1523146834/fullsizeoutput_e44";
 
 class BlogIndex extends React.PureComponent {
   render() {
     return (
-      <div>
+      <PageTransition>
         <div className="home-page">
           <picture className="profile-pic-container">
             <source srcSet={`${profileUrlStub}.webp`} type="image/webp"/>
@@ -17,7 +17,7 @@ class BlogIndex extends React.PureComponent {
           <p>Heya 👋 I'm Tim, a UI engineer at <a href="https://jobs.netflix.com/" target="_blank" rel="noreferrer">Netflix</a>.</p>
           <p>I'm interested in linguistic/literary technologies like NLP 🗣️, Unicode 🔣, bots 🤖, and emoji 🚀, plus topics at the boundaries of the verbal like music 🎵 and poetry 📚.</p>
         </div>
-      </div>
+      </PageTransition>
     )
   }
 }

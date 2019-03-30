@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../components/BlogPostExcerpt/style.module.css';
 import BlogPostNav from '../components/BlogPostNav';
-
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -9,19 +9,11 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pathContext
 
     return (
-      <div>
+      <PageTransition>
         <h1 className={styles.title}>{post.frontmatter.title}</h1>
         <p className={styles.date}>{post.frontmatter.date}</p>
-
         <div style={{fontSize: '1.5em'}} dangerouslySetInnerHTML={{ __html: post.html }} />
-
-        {/* <BlogPostNav
-          prevTitle={previous && previous.frontmatter.title}
-          prevURL={previous && previous.fields.slug}
-          nextTitle={next && next.frontmatter.title}
-          nextURL={next && next.fields.slug}
-        /> */}
-      </div>
+      </PageTransition>
     )
   }
 }
