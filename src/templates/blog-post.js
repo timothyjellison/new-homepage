@@ -1,12 +1,10 @@
 import React from 'react'
 import styles from '../components/BlogPostExcerpt/style.module.css';
-import BlogPostNav from '../components/BlogPostNav';
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const { previous, next } = this.props.pathContext
+    const post = this.props.data.markdownRemark;
 
     return (
       <PageTransition>
