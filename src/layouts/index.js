@@ -10,7 +10,9 @@ import styles from './style.module.css';
 
 class Template extends React.PureComponent {
   render() {
+    console.log('this.props', this.props);
     const {author, role} = get(this.props, 'data.site.siteMetadata')
+    const {pathname} = get(this.props, 'location');
     const currentYear = new Date().getFullYear();
 
     return (
@@ -26,8 +28,8 @@ class Template extends React.PureComponent {
           </header>
 
           <nav className={styles.nav}>
-            <Link to="/" className={styles.link}>About</Link>
-            <Link to="/blog" className={styles.link}>Blog</Link>
+            <Link to="/" className={pathname === '/' ? styles.linkSelected : styles.link}>About</Link>
+            <Link to="/blog" className={(pathname.includes('posts') || pathname.includes('/blog'))  ? styles.linkSelected : styles.link}>Blog</Link>
           </nav>
 
           <main className={styles.mainContent}>
