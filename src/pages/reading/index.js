@@ -8,7 +8,8 @@ class BlogIndex extends React.PureComponent {
     return (
       <PageTransition>
         <div className="home-page">
-          <p>I've always been a big reader, and I love to share when I've found a good book.</p>
+          <p className="books-intro">I've always been a voracious reader. I love to share when I've found a good book, so here's a list of my top recommendations.</p>
+          <p className="books-separator">📚</p>
           <div className="books-grid">
             {books.map(book => {
               return <div className="book">

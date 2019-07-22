@@ -52,5 +52,41 @@ export default [
     author: 'Xiaolu Guo',
     imageUrl: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320495117l/2420281.jpg',
     review: `I was shocked by this novel. I picked it up not knowing what it was and it was so vivid I assumed it was autobiography. One of my favorites by Guo.`
+  },
+  {
+    title: 'War and Peace',
+    author: 'Leo Tolstoy',
+    imageUrl: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1306788511l/265130.jpg',
+    review: `Three families during Napoleon's invasion of Russia. Over a thousand pages long but by the end you'll wish it were longer.`
+  },
+  {
+    title: 'Walden',
+    author: 'Henry David Thoreau',
+    imageUrl: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386919871l/116020.jpg',
+    review: `Along with Whitman's 'Leaves of Grass' and T.S. Eliot's complete poems, one of the formative books of my teenage years. I've reread it countless times.`
+  },
+  {
+    title: 'The Best of It',
+    author: 'Kay Ryan',
+    imageUrl: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328823971l/5974575.jpg',
+    review: 'An excellent contemporary poet whose short poems pack a punch. Tightly controlled images that teach sharp, insightful lessons.'
+  },
+  {
+    title: 'The Pound Era',
+    author: 'Hugh Kenner',
+    imageUrl: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1466149695l/30340.jpg',
+    review: 'Rather than just explain what Ezra Pound was writing this book rebuilds the whole context of why he wrote in the first place. A demanding read, but worth it.'
+  },
+  {
+    title: 'The Light and the Dark',
+    author: 'Mikhail Shishkin',
+    imageUrl: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1363098939l/17328105.jpg',
+    review: `Love letters across time: from a young soldier putting down the Boxer Rebellion to a young woman in contemporary Russia. A strange and powerful novel.`
+  },
+  {
+    title: 'The Good Earth',
+    author: 'Pearl S. Buck',
+    imageUrl: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1282072959l/1085.jpg',
+    review: `One of my mom's favorites, I've returned to read it several times. All the success and strength in the world can't give you a better heart.`
   }
 ];
