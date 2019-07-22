@@ -15,6 +15,25 @@
   width: 100%;
 }
 
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 3rem;
+}
+
+.book img {
+  padding-bottom: 1.5rem;
+  max-width: 100%;
+}
+
+.book h3 {
+  padding-bottom: 1rem;
+}
+
+.book p {
+  font-size: 18px;
+}
+
 @media screen and (min-width: 650px) {
   .home-page {
     display: block;
@@ -23,5 +42,17 @@
   .profile-pic-container {
     float: right;
     margin: 0;
+  }
+
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+
+  .books-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -1,5 +1,5 @@
 .layout {
-  background-image: linear-gradient(90deg, #912891, #d57d86);
+  background-image: linear-gradient(90deg, #327a96, #7ad2a0);
   display: grid;
   grid-template-columns: minmax(0, auto) [column-start] minmax(auto, 1180px) [column-end] minmax(0, auto);
   grid-template-rows: 220px 72px auto 100px;
