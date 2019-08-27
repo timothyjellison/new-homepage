@@ -1,9 +1,12 @@
 import React, {Fragment} from 'react';
 import CodePen from '../../../components/CodePen';
+import styles from '../../../components/BlogPostExcerpt/style.module.css';
 
 export default () => {
   return (
     <div>
+      <h1 className={styles.title}>Bokeh Backgrounds with CSS Doodle</h1>
+      <p className={styles.date}>May 27, 2018</p>
       <p>I’ve been obsessing over this ultra-cool <a href="https://css-doodle.com/" target="blank"><code>&lt;css-doodle /&gt;</code></a> web component. It makes it so easy to generate fun and beautiful graphics for websites. I was playing around with one of the samples <a href="https://css-doodle.com/#usage" target="blank">in the docs</a> and came up with this cool pattern for creating a <a href="https://en.wikipedia.org/wiki/Bokeh" target="_blank">bokeh</a> background. I’ll walk you through it 😃 The final product will look like this:</p>
       <CodePen uid='qYeQBX' title='Bokeh Background with CSS Doodle' />
       <p>(Fair warning: as of the writing of this article web component support is limited. If you want to see the example code working your best bet is to use the latest version of Chrome.)</p>

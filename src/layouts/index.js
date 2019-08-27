@@ -29,6 +29,7 @@ class Template extends React.PureComponent {
 
           <nav className={styles.nav}>
             <Link to="/" className={pathname === '/' ? styles.linkSelected : styles.link}>Home</Link>
+            <Link to="/articles" className={(pathname.includes('posts') || pathname.includes('/articles'))  ? styles.linkSelected : styles.link}>Articles</Link>
             <Link to="/reading" className={pathname === '/reading' ? styles.linkSelected : styles.link}>Reading</Link>
             {/* <Link to="/music" className={pathname === '/music' ? styles.linkSelected : styles.link}>Music</Link> */}
           </nav>

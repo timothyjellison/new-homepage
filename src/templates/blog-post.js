@@ -7,11 +7,11 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark;
 
     return (
-      <PageTransition>
+      <div>
         <h1 className={styles.title}>{post.frontmatter.title}</h1>
         <p className={styles.date}>{post.frontmatter.date}</p>
         <div style={{fontSize: '1.5em'}} dangerouslySetInnerHTML={{ __html: post.html }} />
-      </PageTransition>
+      </div>
     )
   }
 }
