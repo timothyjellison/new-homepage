@@ -3,27 +3,25 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
-import './reset.css';
-import './global.css';
+import '../layouts/reset.css';
+import '../layouts/global.css';
 import 'prismjs/themes/prism-tomorrow.css';
-import styles from './style.module.css';
+import styles from '../layouts/style.module.css';
 
-class Template extends React.PureComponent {
+class Layout extends React.PureComponent {
   render() {
-    console.log('this.props', this.props);
-    const {author, role} = get(this.props, 'data.site.siteMetadata')
     const {pathname} = get(this.props, 'location');
     const currentYear = new Date().getFullYear();
 
     return (
       <div>
-        <Helmet title={`${author}: ${role}`} />
+        <Helmet title="Tim Ellison: User Interface Engineer" />
         <div className={styles.layout}>
 
           <header className={styles.header}>
             <Link to={'/'} className={styles.link}>
-              <h1 className={styles.name}>{author}</h1>
-              <h2>{role}</h2>
+              <h1 className={styles.name}>Tim Ellison</h1>
+              <h2>User Interface Engineer</h2>
             </Link>
           </header>
 
@@ -35,7 +33,7 @@ class Template extends React.PureComponent {
           </nav>
 
           <main className={styles.mainContent}>
-            {this.props.children()}
+            {this.props.children}
           </main>
 
           <footer className={styles.footer}>
@@ -47,15 +45,4 @@ class Template extends React.PureComponent {
   }
 }
 
-export const pageQuery = graphql`
-  query TemplateQuery {
-    site {
-      siteMetadata {
-        author
-        role
-      }
-    }
-  }
-`;
-
-export default Template
+export default Layout

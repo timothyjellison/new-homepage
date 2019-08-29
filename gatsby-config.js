@@ -58,7 +58,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -68,7 +67,6 @@ module.exports = {
     },
     // `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-page-transitions`,
     `gatsby-plugin-react-helmet`
   ],
 }
