@@ -1,22 +1,21 @@
-import React from 'react'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 import styles from '../components/BlogPostExcerpt/style.module.css';
-import PageTransition from 'gatsby-plugin-page-transitions';
+import Layout from '../components/Layout';
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark;
+export default (props) => {
+  const post = props.data.markdownRemark;
 
-    return (
+  return (
+    <Layout location={props.location}>
       <div>
         <h1 className={styles.title}>{post.frontmatter.title}</h1>
         <p className={styles.date}>{post.frontmatter.date}</p>
         <div style={{fontSize: '1.5em'}} dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
-    )
-  }
+    </Layout>
+  )
 }
-
-export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

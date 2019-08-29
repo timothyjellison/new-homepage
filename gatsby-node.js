@@ -1,10 +1,10 @@
-const _ = require('lodash')
-const Promise = require('bluebird')
-const path = require('path')
+const _ = require('lodash');
+const Promise = require('bluebird');
+const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem')
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createRedirect, createPage } = boundActionCreators
+exports.createPages = ({ actions, graphql }) => {
+  const { createRedirect, createPage } = actions
 
   createRedirect({
     fromPath: '/2018/05/27/bokeh-backgrounds-with-css-doodle/',
@@ -61,8 +61,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   })
 }
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
