@@ -1,7 +1,7 @@
 const _ = require('lodash');
-const Promise = require('bluebird');
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem')
+const faves = require('./src/utils/faves');
 
 exports.createPages = ({ actions, graphql }) => {
   const { createRedirect, createPage } = actions
@@ -13,8 +13,20 @@ exports.createPages = ({ actions, graphql }) => {
     toPath: '/posts/bokeh-backgrounds-with-css-doodle/'
   });
 
+  // Generate pages for individual faves
+  const faveTemplate = path.resolve('./src/templates/fave.js')
+
+  faves.forEach(fave => {
+    createPage({
+      path: `faves/${fave.page}`,
+      component: faveTemplate,
+      context: fave
+    })
+  });
+
+  // Generate pages for individual blog posts
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.js')
+    const blogPostTemplate = path.resolve('./src/templates/blog-post.js')
     resolve(
       graphql(
         `
@@ -48,7 +60,7 @@ exports.createPages = ({ actions, graphql }) => {
 
           createPage({
             path: post.node.fields.slug,
-            component: blogPost,
+            component: blogPostTemplate,
             context: {
               slug: post.node.fields.slug,
               previous,

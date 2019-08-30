@@ -16,7 +16,7 @@ export default (props) => (
         Heya 👋 I'm a front-end web developer at <a href="https://jobs.netflix.com/" target="_blank" rel="noreferrer">Netflix</a>. I help build tools for the studio side of Netflix, empowering film creators around the world.
       </p>
       <p>
-        When I'm not building web applications and sites I like to <Link to="/reading">read</Link>, play guitar, garden, and play my Nintendo Switch.
+        When I'm not building web applications and sites I like to <Link to="/faves">make lists of my favorite things</Link>.
       </p>
     </div>
   </Layout>

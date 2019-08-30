@@ -7,18 +7,17 @@
     "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
   },
   "dependencies": {
-    "css-doodle": "^0.4.9",
-    "gatsby": "^2.0.0",
+    "gatsby": "^2.15.0",
     "gatsby-link": "^2.0.0",
     "gatsby-plugin-feed": "^2.0.0",
     "gatsby-plugin-google-analytics": "^2.0.0",
     "gatsby-plugin-offline": "^2.0.0",
-    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-react-helmet": "^3.1.5",
     "gatsby-plugin-sharp": "^2.0.0",
     "gatsby-plugin-typography": "^2.0.0",
     "gatsby-remark-copy-linked-files": "^2.0.0",
     "gatsby-remark-images": "^3.0.0",
-    "gatsby-remark-prismjs": "^2.0.0",
+    "gatsby-remark-prismjs": "^3.3.10",
     "gatsby-remark-responsive-iframe": "^2.0.0",
     "gatsby-remark-smartypants": "^2.0.0",
     "gatsby-source-filesystem": "^2.0.0",
@@ -27,6 +26,7 @@
     "prismjs": "^1.17.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
     "sharp": "^0.23.0",
     "typeface-merriweather": "^0.0.72",
@@ -35,7 +35,7 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
+    "eslint": "^6.2.2",
     "eslint-plugin-react": "^7.7.0",
     "gh-pages": "^2.1.1",
     "prettier": "^1.18.2"
