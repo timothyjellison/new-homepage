@@ -1,5 +1,4 @@
 import React from 'react'
-import '../index.css';
 import Layout from '../../components/Layout';
 import books from '../../../static/books';
 

@@ -5,7 +5,7 @@ date: "2019-08-29T14:12:03.284Z"
 
 This past week I attended the 2019 React Rally in Salt Lake City, and now I'm enjoying my first vacation since starting at Netflix 11 months ago. It's a good opportunity for reflection, to think about *what kind of web developer I want to be*.
 
-## The question
+## The Question
 
 The question that paralyses me is: in my career as a web developer, should I dig in deeper into the areas I already know or should I expand my knowledge out to other areas so I’m more well balanced?
 
