@@ -195,6 +195,10 @@ li {
   }
 }
 
+.blog-post h2 {
+  padding-top: 1em;
+}
+
 .blog-post-excerpt__container {
   display: flex;
   align-items: center;
