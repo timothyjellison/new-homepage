@@ -201,8 +201,6 @@ li {
   }
 }
 
-<<<<<<< Updated upstream
-=======
 .blog-post h2 {
   padding-top: 1em;
 }
@@ -211,7 +209,6 @@ li {
   max-width: 100%;
 }
 
->>>>>>> Stashed changes
 .blog-post-excerpt__container {
   display: flex;
   align-items: center;

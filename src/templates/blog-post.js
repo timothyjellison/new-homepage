@@ -15,7 +15,7 @@ export default ({
   location
 }) => (
   <Layout location={location}>
-    <div>
+    <div className="blog-post">
       <h1 className={"blog-post-excerpt__title"}>{title}</h1>
       <p className={"blog-post-excerpt__date"}>{date}</p>
       <div style={{fontSize: '1.5em'}} dangerouslySetInnerHTML={{ __html: html }} />

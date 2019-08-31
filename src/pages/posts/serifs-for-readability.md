@@ -8,6 +8,7 @@ In the midst of upgrading my site from Gatsby v1 to v2, I noticed I really didn'
 ## Remind me again...
 
 In a letterform, a serif is a little decorative stroke attached to a larger letter stroke. Here's a side by side comparison:
+
 ![side by side comparison of serif and sans serif typefaces](https://i2.wp.com/www.silocreativo.com/en/wp-content/uploads/2016/02/direfferences-serif-sans-serif.png?resize=666%2C370&quality=100&strip=all&ssl=1)
 
 Serifs are non-essential. If you remove the serifs from a letterform you'll still be able to discern what letter it is.
