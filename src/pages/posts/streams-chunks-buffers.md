@@ -28,7 +28,7 @@ How does Node decide where to end one chunk and begin the next? If I'm streaming
 The stream decides chunk size by using the highWaterMark property specified in its constructor. **By default the highWaterMark is 64kb**, but we can set it to whatever we want. Here's how we would stream a .txt file 2 bytes at a time.
 
 ```javascript
-fs.createReadStream('./test.txt', {
+fs.createReadStream('./x.txt', {
   highWaterMark: 2
 });
 ```
@@ -39,7 +39,7 @@ Buffers have significant *memory* advantages. Buffers are fixed length so they d
 
 So what does a Buffer look like?
 
-Say I have a file `test.txt` that I want to stream.
+Say I have a file `x.txt` that I want to stream.
 ```
 abc
 ```
@@ -47,7 +47,7 @@ I'll create a new read stream using Node's file system (`fs`) utility.
 ```javascript
 const fs = require('fs');
 
-const example = fs.createReadStream('./test.txt', {
+const example = fs.createReadStream('./x.txt', {
   highWaterMark: 2
 });
 

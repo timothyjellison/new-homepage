@@ -1,3 +1,7 @@
+html {
+  --brandcolor: #0d86a2;
+}
+
 /* Define the "system" font family */
 @font-face {
   font-family: system;
@@ -8,7 +12,6 @@
 
 body {
   font-family: "system";
-  background-color: #327a96;
 }
 
 h1 {font-size: 2.5rem;}
@@ -27,10 +30,10 @@ ul {
 }
 
 a {
-  color: #0d86a2;
+  color: var(--brandcolor);
   text-decoration: none;
   font-weight: bold;
-  border-bottom: 1px dashed #0d86a2;
+  border-bottom: 1px dashed var(--brandcolor);
 }
 
 strong {
@@ -62,7 +65,7 @@ li {
 }
 
 .layout {
-  background-image: linear-gradient(90deg, #327a96, #7ad2a0);
+  /* background-image: linear-gradient(90deg, #327a96, #7ad2a0); */
   display: grid;
   grid-template-columns: minmax(0, auto) [column-start] minmax(auto, 1180px) [column-end] minmax(0, auto);
   grid-template-rows: 150px 72px auto 100px;
@@ -112,7 +115,6 @@ li {
 
 .nav .link,
 .nav .linkSelected {
-  color: white;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
@@ -124,7 +126,7 @@ li {
 }
 
 .nav .linkSelected {
-  border-bottom: 3px dashed white;
+  border-bottom: 3px dashed var(--brandcolor);
 }
 
 .nav .link:last-of-type,
@@ -211,18 +213,31 @@ li {
 
 .blog-post-excerpt__container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
   color: #333;
   text-decoration: none;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   border-bottom: none; /* to counteract the global style */
 }
 
 .blog-post-excerpt__title {
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   font-weight: bold;
+}
+
+@media screen and (min-width: 650px) {
+  .blog-post-excerpt__container {
+    flex-direction: row;
+    align-items: column;
+    margin-bottom: 0.5em;
+  }
+
+  .blog-post-excerpt__title {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .blog-post-excerpt__date {
@@ -231,7 +246,7 @@ li {
 
 .fave-feature img {
   float: left;
-  max-width: 300px;
+  max-width: 100%;
   margin: 0 1em 1em 0;
 }
 

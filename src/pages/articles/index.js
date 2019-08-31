@@ -15,7 +15,7 @@ export default ({ location, data } ) => (
                 slug
               }
               frontmatter {
-                date(formatString: "MM/DD/YY")
+                date(formatString: "MMMM DD, YYYY")
                 title
               }
             }
@@ -42,7 +42,7 @@ export default ({ location, data } ) => (
             <BlogPostExcerpt
               url={"/posts/bokeh-backgrounds-with-css-doodle/"}
               title={"Bokeh Backgrounds With CSS Doodle"}
-              date={"05/27/18"}
+              date={"May 27, 2018"}
             />
           </div>
         </Layout>
