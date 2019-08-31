@@ -53,6 +53,12 @@ li {
 
 .gatsby-highlight {
   margin-bottom: 1em;
+  box-sizing: border-box;
+}
+
+.gatsby-highlight pre,
+.gatsby-highlight code {
+  white-space: pre-wrap
 }
 
 .layout {
@@ -195,6 +201,17 @@ li {
   }
 }
 
+<<<<<<< Updated upstream
+=======
+.blog-post h2 {
+  padding-top: 1em;
+}
+
+.blog-post img {
+  max-width: 100%;
+}
+
+>>>>>>> Stashed changes
 .blog-post-excerpt__container {
   display: flex;
   align-items: center;
