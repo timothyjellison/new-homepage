@@ -6,20 +6,18 @@ import { Link } from 'gatsby';
 
 export default (props) =>
   <Layout location={props.location}>
-    <div className="home-page">
-      {Object.values(FAVE_TYPES).map(type =>
-        <div className="faves-category">
-          <h2>{type}</h2>
-          <div className="faves-grid">
-            {faves.filter(fave => fave.type === type).map(fave =>
-              <div className="fave">
-                <Link to={`/faves/${fave.page}`}>
-                  <img src={fave.imageUrl} alt={fave.name}/>
-                </Link>
-              </div>
-            )}
-          </div>
+    {Object.values(FAVE_TYPES).map(type =>
+      <div className="faves-category">
+        <h2>{type}</h2>
+        <div className="faves-grid">
+          {faves.filter(fave => fave.type === type).map(fave =>
+            <div className="fave">
+              <Link to={`/faves/${fave.page}`}>
+                <img src={fave.imageUrl} alt={fave.name}/>
+              </Link>
+            </div>
+          )}
         </div>
-      )}
-    </div>
+      </div>
+    )}
   </Layout>

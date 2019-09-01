@@ -1,5 +1,12 @@
 html {
-  --brandcolor: #0d86a2;
+  --brandcolor: #000;
+  --c1: #fac173;
+  --c2: #f1646c;
+  --c3: #f39cc3;
+  --c4: #9cd5c0;
+  --c5: #28a4dd;
+  --grid-l: 140px;
+  --border: 5px dotted var(--c4)
 }
 
 /* Define the "system" font family */
@@ -143,19 +150,115 @@ li {
 }
 
 .home-page {
-  display: flex;
-  flex-direction: column;
+  color: white;
+  display: grid;
+  /* grid-gap: 1em; */
+  grid-template-columns: repeat(4, var(--grid-l));
+  grid-template-rows: repeat(5, var(--grid-l));
 }
 
-.profile-pic-container {
+.home-page .block {
+  display: grid;
+  place-content: center;
+  font-size: 1.5rem;
+}
+
+.home-page p {
+  margin: 0;
+}
+
+.home-page a {
+  color: white;
+  border-color: white;
+}
+
+.block1 {
+  font-family: futura;
+  background-color: var(--c5);
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.block2 {
+  grid-column: 2 / 4;
+  grid-row: 2;
+  background-color: var(--c2);
+  color: white;
+}
+
+.block2img {
+  grid-column: 4;
+  grid-row: 2;
+  max-width: var(--grid-l);
+}
+
+.block2img img {
+  height: var(--grid-l);
+  overflow: hidden;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.block3 {
+  grid-column: 2;
+}
+
+.block4 {
+  font-family: futura;
+  display: block;
+  grid-column: 2;
+  grid-row: 3 / 5;
+  background-color: var(--c1);
+  text-align: center;
+}
+
+.block.block5 {
+  grid-row: 5;
+  background-color: var(--c4);
+  border-bottom-left-radius: 1em;
+  font-size: 3em;
+}
+
+.block.block5extn {
+  grid-row: 4;
+  border-left: var(--border);
+  border-top: var(--border);
+  border-top-left-radius: 1em;
+}
+
+.block6 {
+  display: block;
+  grid-row: 4 / 6;
+  grid-column: 4;
+  background-color: var(--c3);
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  text-align: center;
+}
+
+.block7 {
+  border-top: var(--border);
+  grid-row: 4;
+  grid-column: 3;
+}
+
+.block8 {
+  grid-row: 5;
+  grid-column: 2 / 4;
+  border-bottom: var(--border);
+}
+
+.home-page .profile-pic-container {
   order: 4;
   margin: 0 auto;
+  padding: 0;
 }
 
-.profile-pic {
-  border-radius: 50%;
-  border: 1em solid white;
+.home-page .profile-pic {
+  overflow: hidden;
+  border-top-right-radius: 1em;
   max-width: 300px;
+  max-height: var(--grid-l);
   width: 100%;
 }
 
@@ -183,15 +286,6 @@ li {
 }
 
 @media screen and (min-width: 650px) {
-  .home-page {
-    display: block;
-  }
-
-  .profile-pic-container {
-    float: right;
-    margin: 0;
-  }
-
   .faves-grid {
     grid-template-columns: repeat(3, 1fr);
   }

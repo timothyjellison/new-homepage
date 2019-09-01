@@ -2,22 +2,38 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Layout from '../components/Layout';
 
-const profilePicUrlWithoutExt = "https://res.cloudinary.com/dzwa7qhj1/image/upload/c_scale,e_grayscale,w_180/v1523146834/fullsizeoutput_e44";
+const profilePicUrlWithoutExt = "https://res.cloudinary.com/dzwa7qhj1/image/upload/v1567339435/beach-pic";
 
 export default (props) => (
   <Layout location={props.location}>
     <div className="home-page">
-      <picture className="profile-pic-container">
+      <p className="block1 block"><span><em>Heya!</em> 👋<br/>I'm Tim.</span></p>
+      <p className="block2 block">
+        <span>I'm a web developer<br/>at <a href="https://jobs.netflix.com/" target="_blank" rel="noreferrer">Netflix</a>.</span>
+      </p>
+      <div className="block block2img"><img src="https://cdn.vox-cdn.com/thumbor/_bCV_w5p7SrZVsZG1RvRAhBOeBU=/39x0:3111x2048/1820x1213/filters:focal(39x0:3111x2048):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/49901753/netflixlogo.0.0.png"/></div>
+      <picture className="profile-pic-container block3 block">
         <source srcSet={`${profilePicUrlWithoutExt}.webp`} type="image/webp"/>
         <source srcSet={`${profilePicUrlWithoutExt}.png`} type="image/png"/>
         <img className="profile-pic" src={`${profilePicUrlWithoutExt}.png`} alt="Selfie of Tim Ellison"/>
       </picture>
-      <p>
-        Heya 👋 I'm a front-end web developer at <a href="https://jobs.netflix.com/" target="_blank" rel="noreferrer">Netflix</a>. I help build tools for the studio side of Netflix, empowering film creators around the world.
+
+      <p className="block4 block">
+        <div>I'm on</div>
+        <a href="https://twitter.com/zindex9999" target="_blank" rel="noopener">Twitter</a>
+        <div>&</div>
+        <a href="https://github.com/timothyjellison" target="blank" rel="noopener">Github</a>
       </p>
-      <p>
-        When I'm not building web applications and sites I like to <Link to="/faves">make lists of my favorite things</Link>.
+      <p className="block block5">
+        👇
       </p>
+      <div className="block block5extn"></div>
+      <p className="block block6">
+        <div>I've written some</div>
+        <a href="/articles"><em>articles</em></a>
+      </p>
+      <div className="block block7"></div>
+      <div className="block block8"></div>
     </div>
   </Layout>
 );
