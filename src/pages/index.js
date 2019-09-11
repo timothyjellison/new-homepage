@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Layout from '../components/Layout';
 
-const profilePicUrlWithoutExt = "https://res.cloudinary.com/dzwa7qhj1/image/upload/v1567339435/beach-pic";
+const profilePicUrlWithoutExt = "https://res.cloudinary.com/dzwa7qhj1/image/upload/v1568214114/IMG_1814";
 
 export default (props) => (
   <Layout location={props.location}>
@@ -25,11 +25,11 @@ export default (props) => (
         <a href="https://github.com/timothyjellison" target="blank" rel="noopener">Github</a>
       </p>
       <p className="block block5">
-        👇
+        👍
       </p>
       <div className="block block5extn"></div>
       <p className="block block6">
-        <div>I've written some</div>
+        <div>and<br/>I've written some</div>
         <a href="/articles"><em>articles</em></a>
       </p>
       <div className="block block7"></div>
