@@ -12,7 +12,7 @@ export default (props) => (
         <span>I'm a web developer<br/>at <a href="https://jobs.netflix.com/" target="_blank" rel="noreferrer">Netflix</a>.</span>
       </p>
       <div className="block block2img"><img src="https://cdn.vox-cdn.com/thumbor/_bCV_w5p7SrZVsZG1RvRAhBOeBU=/39x0:3111x2048/1820x1213/filters:focal(39x0:3111x2048):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/49901753/netflixlogo.0.0.png"/></div>
-      <picture className="profile-pic-container block3 block">
+      <picture className="block3 block">
         <source srcSet={`${profilePicUrlWithoutExt}.webp`} type="image/webp"/>
         <source srcSet={`${profilePicUrlWithoutExt}.png`} type="image/png"/>
         <img className="profile-pic" src={`${profilePicUrlWithoutExt}.png`} alt="Selfie of Tim Ellison"/>
