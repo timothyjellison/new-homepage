@@ -11,6 +11,13 @@ module.exports = [
   },
   {
     type: FAVE_TYPES.video_games,
+    page: 'celeste',
+    name: 'Celeste',
+    imageUrl: 'https://www.nintendo.com/content/dam/noa/en_US/games/switch/c/celeste-switch/Switch_CELESTE_description-char.jpg',
+    review: `I was shocked by how addictive this little side-scroller was, especially considering it's high level of difficulty.`
+  },
+  {
+    type: FAVE_TYPES.video_games,
     page: 'stardew-valley',
     name: 'Stardew Valley',
     imageUrl: 'https://images.g2a.com/newlayout/323x433/1x1x0/c9701140e551/590ec9135bafe3013308b8b5',
