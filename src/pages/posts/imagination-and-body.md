@@ -16,7 +16,7 @@ That's how I found my $600 Mexican-made Stratocaster. The instant I played it I 
 
 I'm gonna smash together some quotes from Robert Pinsky's essay ["Freedom in Poetry"](https://www.poetryfoundation.org/articles/70036/freedom-in-poetry):
 
-> There are no rules. Or, you can modify that rule by observing that each work of art generates its own unique rules. Impulses, swerves, collisions, flights, descents, gags, indirections, surprises, exploding cigars, non sequiturs: all are allowed or encouraged, and all in some sense begin to create their own principles.
+> "There are no rules. Or, you can modify that rule by observing that each work of art generates its own unique rules. Impulses, swerves, collisions, flights, descents, gags, indirections, surprises, exploding cigars, non sequiturs: all are allowed or encouraged, and all in some sense begin to create their own principles."
 
 And now comes an insight, something I didn't expect to find as I wrote here on this topic: creative expression is an exercise in freedom. Our whole person — mental, physical, spiritual — stretches its wings and soars in the act of imagining and expressing what it imagines. That's why the instrument — the guitar, the piano, the laptop keyboard — needs to be just right. Because the whole person, body and soul, has to be involved. And in expressing your freedom you establish principles. You produce not just beauty but truth and goodness, too.
 
@@ -24,6 +24,6 @@ Another insight: at this point in my life, it's OK to spend a bit more money on 
 
 Say it again, Robert:
 
-> There are no rules.
+> "There are no rules."
 
 No rules, but we can dream up principles.
