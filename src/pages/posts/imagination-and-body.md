@@ -2,7 +2,7 @@
 title: Imagination and the Body
 date: "2019-12-08T22:12:03.284Z"
 ---
-This year I made three big purchases — and returned two of them. The one I kept was a new Fender Stratocaster; but I bought and returned a Fender digital modeling amplifier and an Akai Fire controller for Fruity Loops Studio. I love the Stratocaster, but the other two have been so dissatisfying. I can say that I was genuinely surprised by how much I disliked these two items — each time I'd researched and weighed options for months before hitting the "Buy Now" button — and I feel like there's a lesson to be learned by writing about my experience here.
+This year I made three big music-related purchases — and returned two of them. The one I kept was a new Fender Stratocaster; but I bought and returned a Fender digital modeling amplifier and an Akai Fire controller for Fruity Loops Studio. I love the Stratocaster, but the other two have been so dissatisfying. I can say that I was genuinely surprised by how much I disliked these two items — each time I'd researched and weighed options for months before hitting the "Buy Now" button — and I feel like there's a lesson to be learned by writing about my experience here.
 
 First, the digital amplifier. I already own a Fender tube amplifier but I don't have any effects pedals, so I thought I'd spare myself the expense and buy an amplifier that has all the effects you could want just built in. The problem was that it sounded *so* digital. There was something missing from the sound, no matter how loud I turned it up or how I adjusted the settings. It felt like I'd play my guitar and then the amplifier would do a bad impression of me playing the guitar.
 
