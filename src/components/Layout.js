@@ -22,14 +22,14 @@ class Layout extends React.PureComponent {
 
     return (
       <>
-        <Helmet title="Tim Ellison: Front-End Web Developer">
+        <Helmet title="Tim Ellison: UI Engineer">
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </Helmet>
         <div className="layout">
           <header className="header grid">
             <Link to={'/'} className="link">
               <h1 className={'name'}>Tim Ellison</h1>
-              <h2>Front-End Web Developer</h2>
+              <h2>UI Engineer</h2>
             </Link>
           </header>
 
@@ -40,16 +40,6 @@ class Layout extends React.PureComponent {
                 className={pathname === '/' ? 'linkSelected' : 'link'}
               >
                 Home
-              </Link>
-              <Link
-                to="/articles"
-                className={
-                  pathname.includes('posts') || pathname.includes('/articles')
-                    ? 'linkSelected'
-                    : 'link'
-                }
-              >
-                Articles
               </Link>
               <Link
                 to="/faves"

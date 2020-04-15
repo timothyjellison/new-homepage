@@ -1,72 +1,77 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { StaticQuery, graphql } from 'gatsby'
+import get from 'lodash/get'
+import BlogPostExcerpt from '../components/BlogPostExcerpt'
 import Layout from '../components/Layout'
 
-const profilePicUrlWithoutExt =
-  'https://res.cloudinary.com/dzwa7qhj1/image/upload/v1568214114/IMG_1814'
+const LilHook = ({ href, children }) => (
+  <a href={href} target="_blank" rel="noreferrer noopener">
+    {children}
+  </a>
+)
 
-export default props => (
-  <Layout location={props.location}>
-    <div className="home-page">
-      <p className="block1 block">
-        <span>
-          <em>Heya!</em> 👋
-          <br />
-          I'm Tim.
-        </span>
-      </p>
-      <p className="block2 block">
-        <span>
-          I'm a web developer
-          <br />
-          at{' '}
-          <a href="https://jobs.netflix.com/" target="_blank" rel="noreferrer">
-            Netflix
-          </a>
-          .
-        </span>
-      </p>
-      <div className="block block2img">
-        <img src="https://cdn.vox-cdn.com/thumbor/_bCV_w5p7SrZVsZG1RvRAhBOeBU=/39x0:3111x2048/1820x1213/filters:focal(39x0:3111x2048):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/49901753/netflixlogo.0.0.png" />
-      </div>
-      <picture className="block3 block">
-        <source srcSet={`${profilePicUrlWithoutExt}.webp`} type="image/webp" />
-        <source srcSet={`${profilePicUrlWithoutExt}.png`} type="image/png" />
-        <img
-          className="profile-pic"
-          src={`${profilePicUrlWithoutExt}.png`}
-          alt="Selfie of Tim Ellison"
-        />
-      </picture>
+export default ({ location, data }) => (
+  <StaticQuery
+    query={graphql`
+      {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                date(formatString: "MMMM DD, YYYY")
+                title
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={() => {
+      const posts = get(data, 'allMarkdownRemark.edges')
 
-      <p className="block4 block">
-        <div>I'm on</div>
-        <a href="https://twitter.com/zindex9999" target="_blank" rel="noopener">
-          Twitter
-        </a>
-        <div>&</div>
-        <a
-          href="https://github.com/timothyjellison"
-          target="blank"
-          rel="noopener"
-        >
-          Github
-        </a>
-      </p>
-      <p className="block block5">👍</p>
-      <div className="block block5extn"></div>
-      <p className="block block6">
-        <div>
-          and
-          <br />
-          I've written some
-        </div>
-        <a href="/articles">
-          <em>articles</em>
-        </a>
-      </p>
-      <div className="block block7"></div>
-      <div className="block block8"></div>
-    </div>
-  </Layout>
+      return (
+        <Layout location={location}>
+          <div>
+            <p>
+              Hi 👋 I'm Tim Ellison. I'm a UI engineer at{' '}
+              <LilHook href="https://jobs.netflix.com/">Netflix</LilHook>.
+            </p>
+            <p>
+              I'm on{' '}
+              <LilHook href="https://github.com/timothyjellison">
+                Github
+              </LilHook>{' '}
+              and{' '}
+              <LilHook href="https://www.linkedin.com/in/timothyjellison/">
+                LinkedIn
+              </LilHook>{' '}
+              .
+            </p>
+          </div>
+          <div className="blog-posts">
+            <h2>Blog Posts</h2>
+            {!!posts.length &&
+              posts.map(({ node }) => (
+                <BlogPostExcerpt
+                  url={node.fields.slug}
+                  title={get(node, 'frontmatter.title') || node.fields.slug}
+                  date={node.frontmatter.date}
+                  key={node.fields.slug}
+                />
+              ))}
+
+            {/* hardcoding in this one exception to the default blog flow */}
+            <BlogPostExcerpt
+              url={'/posts/bokeh-backgrounds-with-css-doodle/'}
+              title={'Bokeh Backgrounds With CSS Doodle'}
+              date={'May 27, 2018'}
+            />
+          </div>
+        </Layout>
+      )
+    }}
+  />
 )
