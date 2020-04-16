@@ -19,6 +19,7 @@ html {
 
 body {
   font-family: "system";
+  background-image: linear-gradient(var(--c5), var(--c4))
 }
 
 h1 {
@@ -39,7 +40,6 @@ h6 {
 
 p,
 ul {
-  font-family: "pt serif", Georgia, Times, times new roman, serif;
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 1em;
@@ -82,10 +82,9 @@ li {
 }
 
 .layout {
-  /* background-image: linear-gradient(90deg, #327a96, #7ad2a0); */
   display: grid;
-  grid-template-columns: minmax(0, auto) [column-start] minmax(auto, 1180px) [column-end] minmax(0, auto);
-  grid-template-rows: 150px 72px auto 100px;
+  grid-template-columns: minmax(0, auto) [column-start] minmax(auto, 1000px) [column-end] minmax(0, auto);
+  grid-template-rows: 150px auto 100px;
   min-height: 100vh;
 }
 
@@ -193,6 +192,10 @@ li {
   .faves-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.about-me p {
+  font-size: 1.5rem;
 }
 
 .blog-posts {

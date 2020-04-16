@@ -34,7 +34,7 @@ export default ({ location, data }) => (
 
       return (
         <Layout location={location}>
-          <div>
+          <div className="about-me">
             <p>
               Hi 👋 I'm Tim Ellison. I'm a UI engineer at{' '}
               <LilHook href="https://jobs.netflix.com/">Netflix</LilHook>.
