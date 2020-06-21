@@ -6,11 +6,11 @@ html {
   --c4: #9cd5c0;
   --c5: #28a4dd;
   --grid-l: 140px;
-  --border: 5px dotted var(--c4)
+  --border: 5px dotted var(--c4);
 }
 
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -68,7 +68,7 @@ li {
 
 .gatsby-highlight pre,
 .gatsby-highlight code {
-  white-space: pre-wrap
+  white-space: pre-wrap;
 }
 
 .layout {
@@ -90,7 +90,7 @@ li {
 }
 
 .grid>* {
-  grid-column: content-start / content-end
+  grid-column: content-start / content-end;
 }
 
 .mainContent {
