@@ -29,8 +29,8 @@ export default ({ location, data }) => (
         }
       }
     `}
-    render={() => {
-      const posts = get(data, 'allMarkdownRemark.edges')
+    render={data => {
+      const posts = get(data, 'allMarkdownRemark.edges') || []
 
       return (
         <Layout location={location}>
