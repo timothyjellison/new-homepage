@@ -1,7 +1,6 @@
-const _ = require('lodash');
-const path = require('path');
+const _ = require('lodash')
+const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
-const faves = require('./src/utils/faves');
 
 exports.createPages = ({ actions, graphql }) => {
   const { createRedirect, createPage } = actions
@@ -10,19 +9,8 @@ exports.createPages = ({ actions, graphql }) => {
     fromPath: '/2018/05/27/bokeh-backgrounds-with-css-doodle/',
     isPermanent: true,
     redirectInBrowser: true,
-    toPath: '/posts/bokeh-backgrounds-with-css-doodle/'
-  });
-
-  // Generate pages for individual faves
-  const faveTemplate = path.resolve('./src/templates/fave.js')
-
-  faves.forEach(fave => {
-    createPage({
-      path: `faves/${fave.page}`,
-      component: faveTemplate,
-      context: fave
-    })
-  });
+    toPath: '/posts/bokeh-backgrounds-with-css-doodle/',
+  })
 
   // Generate pages for individual blog posts
   return new Promise((resolve, reject) => {
@@ -31,7 +19,10 @@ exports.createPages = ({ actions, graphql }) => {
       graphql(
         `
           {
-            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
+            allMarkdownRemark(
+              sort: { fields: [frontmatter___date], order: DESC }
+              limit: 1000
+            ) {
               edges {
                 node {
                   fields {
@@ -52,11 +43,12 @@ exports.createPages = ({ actions, graphql }) => {
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges;
+        const posts = result.data.allMarkdownRemark.edges
 
         _.each(posts, (post, index) => {
-          const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-          const next = index === 0 ? null : posts[index - 1].node;
+          const previous =
+            index === posts.length - 1 ? null : posts[index + 1].node
+          const next = index === 0 ? null : posts[index - 1].node
 
           createPage({
             path: post.node.fields.slug,
