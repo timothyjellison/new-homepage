@@ -1,5 +1,5 @@
 html {
-  --brandcolor: #000;
+  --brandcolor: #b466a7;
   --c1: #fac173;
   --c2: #f1646c;
   --c3: #f39cc3;
@@ -29,8 +29,7 @@ h6 {
   font-size: 1.2rem;
 }
 
-p,
-ul {
+p {
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 1em;
@@ -40,19 +39,6 @@ a {
   color: var(--brandcolor);
   text-decoration: none;
   border-bottom: 1px dashed var(--brandcolor);
-}
-
-strong {
-  font-weight: 900;
-}
-
-em {
-  font-style: italic;
-}
-
-li {
-  margin-left: 1em;
-  margin-bottom: 1em;
 }
 
 /* override the code highlighting font size */
@@ -151,41 +137,6 @@ li {
   color: #999999;
 }
 
-.faves-category {
-  margin-bottom: 3em;
-}
-
-.faves-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem;
-}
-
-.faves-grid a {
-  border: 0;
-}
-
-.fave img {
-  max-width: 100%;
-  min-width: 100%;
-}
-
-.fave h3 {
-  padding-bottom: 1rem;
-}
-
-@media screen and (min-width: 650px) {
-  .faves-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .faves-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 .about-me p {
   font-size: 1.5rem;
 }
@@ -217,7 +168,6 @@ li {
 .blog-post-excerpt__title {
   font-size: 1.2rem;
   margin-bottom: 0.2rem;
-  font-weight: bold;
 }
 
 @media screen and (min-width: 650px) {
@@ -234,18 +184,4 @@ li {
 
 .blog-post-excerpt__date {
   color: #aaa;
-}
-
-.fave-feature img {
-  float: left;
-  max-width: 100%;
-  margin: 0 1em 1em 0;
-}
-
-.fave-feature h2 {
-  margin-bottom: 0.5rem;
-}
-
-.fave-feature h3 {
-  margin-bottom: 0.5rem;
 }

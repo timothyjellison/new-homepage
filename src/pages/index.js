@@ -47,7 +47,7 @@ export default ({ location, data }) => (
               and{' '}
               <LilHook href="https://www.linkedin.com/in/timothyjellison/">
                 LinkedIn
-              </LilHook>{' '}
+              </LilHook>
               .
             </p>
           </div>
