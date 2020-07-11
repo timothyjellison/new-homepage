@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import styles from './index.module.css'
+import NavBar from '../NavBar'
 
 class Layout extends React.PureComponent {
   componentDidMount() {
@@ -16,24 +17,19 @@ class Layout extends React.PureComponent {
   }
 
   render() {
-    const currentYear = new Date().getFullYear()
-
     return (
       <>
-        <Helmet title="Tim Ellison: UI Engineer">
+        <Helmet title="Timothy Ellison">
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </Helmet>
-        <div className="layout">
-          <header className="header grid">
-            <Link to={'/'} className="link">
-              <h1 className={'name'}>Tim Ellison</h1>
-              <h2>UI Engineer</h2>
-            </Link>
+        <div className={styles.layout}>
+          <header className={`${styles.grid} ${styles.header}`}>
+            <NavBar />
           </header>
-
-          <main className={'mainContent grid'}>{this.props.children}</main>
-
-          <footer className={'footer'}>Tim Ellison &copy; {currentYear}</footer>
+          <main className={styles.grid}>{this.props.children}</main>
+          <footer className={styles.grid}>
+            <p className={styles.copyright}>&copy; 2018 Tim Ellison</p>
+          </footer>
         </div>
       </>
     )
