@@ -3,12 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import get from 'lodash/get'
 import BlogPostExcerpt from '../components/BlogPostExcerpt'
 import Layout from '../components/Layout'
-
-const LilHook = ({ href, children }) => (
-  <a href={href} target="_blank" rel="noreferrer noopener">
-    {children}
-  </a>
-)
+import AboutMe from '../components/AboutMe'
 
 export default ({ location, data }) => (
   <StaticQuery
@@ -34,24 +29,8 @@ export default ({ location, data }) => (
 
       return (
         <Layout location={location}>
-          <div className="about-me">
-            <p>
-              Hi 👋 I'm Tim Ellison. I'm a UI engineer at{' '}
-              <LilHook href="https://jobs.netflix.com/">Netflix</LilHook>.
-            </p>
-            <p>
-              I'm on{' '}
-              <LilHook href="https://github.com/timothyjellison">
-                Github
-              </LilHook>{' '}
-              and{' '}
-              <LilHook href="https://www.linkedin.com/in/timothyjellison/">
-                LinkedIn
-              </LilHook>
-              .
-            </p>
-          </div>
-          <div className="blog-posts">
+          <AboutMe />
+          <div>
             <h2>Blog Posts</h2>
             {!!posts.length &&
               posts.map(({ node }) => (
