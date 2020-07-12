@@ -1,0 +1,19 @@
+.profilePic {
+  max-width: 200px;
+  clip-path: circle(50%);
+  margin: 20px 20px 20px 0;
+  float: left;
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.socialIcons a {
+  box-shadow: none;
+  margin-right: 0.5rem;
+}
+
+.body {
+  margin-top: 1rem;
+}
