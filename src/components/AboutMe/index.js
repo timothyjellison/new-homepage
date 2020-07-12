@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './index.module.css'
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
+import { FaLinkedinIn, FaGithub, FaCodepen } from 'react-icons/fa'
 
 const LilHook = ({ href, children }) => (
   <a href={href} target="_blank" rel="noreferrer noopener">
@@ -22,6 +22,9 @@ export default () => (
         </LilHook>
         <LilHook href="https://www.linkedin.com/in/timothyjellison/">
           <FaLinkedinIn />
+        </LilHook>
+        <LilHook href="https://codepen.io/tlls1">
+          <FaCodepen />
         </LilHook>
       </div>
     </div>
