@@ -9,9 +9,14 @@
   margin-bottom: 1rem;
 }
 
+.header small {
+  color: #777;
+}
+
 .socialIcons a {
   box-shadow: none;
-  margin-right: 0.5rem;
+  margin-right: 0.8rem;
+  font-size: 1.5rem;
 }
 
 .body {
