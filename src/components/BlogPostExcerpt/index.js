@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styles from './BlogPostExcerpt.module.css'
+import styles from './index.module.css'
 
 export default ({ url, title, date }) => (
   <Link to={url} className={styles.excerpt}>
