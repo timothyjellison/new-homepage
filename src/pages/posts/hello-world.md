@@ -1,6 +1,7 @@
 ---
 title: Hello Gatsby & Netlify
-date: "2018-09-20T22:12:03.284Z"
+date: '2018-09-20T22:12:03.284Z'
+subtitle: Some details about my new blog setup
 ---
 
 I've switched from a WordPress site hosted on DreamHost to this Gatsby powered site hosted on Netlify. WordPress was adding a ton of extra complexity around my blog and DreamHost didn't give me enough control over my own server configuration choices. Gatsby lets me work with React and GraphQL, which I'm more comfortable with than PHP, and Netlify gives me confidence that things are being managed well on the server-side along with the freedom to make alterations when necessary.

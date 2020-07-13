@@ -1,19 +1,15 @@
 .navBar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0.5rem 0;
+  font-size: 1.5rem;
 }
 
 .navBar a:link,
 .navBar a:visited,
 .navBar a:hover,
 .navBar a:active {
-  color: white;
   text-decoration: none;
   box-shadow: none;
-}
-
-.externalLinks a {
-  margin-left: 1rem;
+  margin-right: 1rem;
 }

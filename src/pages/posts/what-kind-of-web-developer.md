@@ -1,9 +1,10 @@
 ---
 title: What Kind of Web Developer I Want to Be
-date: "2019-08-29T14:12:03.284Z"
+date: '2019-08-29T14:12:03.284Z'
+subtitle: Taking stock of where I am and where I'm headed in my career
 ---
 
-This past week I attended the 2019 React Rally in Salt Lake City, and now I'm enjoying my first vacation since starting at Netflix 11 months ago. It's a good opportunity for reflection, to think about *what kind of web developer I want to be*.
+This past week I attended the 2019 React Rally in Salt Lake City, and now I'm enjoying my first vacation since starting at Netflix 11 months ago. It's a good opportunity for reflection, to think about _what kind of web developer I want to be_.
 
 ## The Question
 
