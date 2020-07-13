@@ -30,9 +30,10 @@ export default () => (
     </div>
     <p className={styles.body}>
       At <LilHook href="https://jobs.netflix.com/">Netflix</LilHook> I build web
-      apps used by translators around the world to create subtitles. In all my
-      work I value simplicity and utility above all else. Besides front-end web
-      development my passions are poetry, jazz, and cooking.
+      apps used by translators around the world to create subtitles. In my work
+      I value utility and simplicity above all else. Besides front-end web
+      development my passions are reading literature and philosophy, playing and
+      listening to music, and cooking.
     </p>
   </>
 )

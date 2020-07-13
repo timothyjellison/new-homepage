@@ -7,8 +7,13 @@
   grid-template-rows: 50px auto 100px;
 }
 
-.layout * {
+.layout main,
+.layout header {
   grid-column: column-start / column-end;
+}
+
+.layout footer {
+  grid-column: 1 / 4;
 }
 
 .grid {
@@ -25,16 +30,12 @@
 
 .layout main {
   padding-top: 2rem;
+  margin-bottom: 4rem;
 }
 
-.header {
-  background-color: black;
-}
-
-.header:before,
-.header:after {
-  content: '';
-  background-color: black;
+.layout footer {
+  background: #e8505b;
+  color: white;
 }
 
 .copyright {

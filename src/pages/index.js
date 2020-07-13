@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import Link from 'gatsby-link'
 import get from 'lodash/get'
 import BlogPostExcerpt from '../components/BlogPostExcerpt'
 import Layout from '../components/Layout'
@@ -9,7 +10,10 @@ export default ({ location, data }) => (
   <StaticQuery
     query={graphql`
       {
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        allMarkdownRemark(
+          limit: 5
+          sort: { fields: [frontmatter___date], order: DESC }
+        ) {
           edges {
             node {
               fields {
@@ -31,23 +35,20 @@ export default ({ location, data }) => (
         <Layout location={location}>
           <AboutMe />
           <div>
-            <h2>Blog Posts</h2>
-            {!!posts.length &&
-              posts.map(({ node }) => (
-                <BlogPostExcerpt
-                  url={node.fields.slug}
-                  title={get(node, 'frontmatter.title') || node.fields.slug}
-                  date={node.frontmatter.date}
-                  key={node.fields.slug}
-                />
-              ))}
-
-            {/* hardcoding in this one exception to the default blog flow */}
-            <BlogPostExcerpt
-              url={'/posts/bokeh-backgrounds-with-css-doodle/'}
-              title={'Bokeh Backgrounds With CSS Doodle'}
-              date={'May 27, 2018'}
-            />
+            <h2>Latest Blog Posts</h2>
+            <ul>
+              {!!posts.length &&
+                posts.map(({ node }) => (
+                  <li>
+                    <BlogPostExcerpt
+                      url={node.fields.slug}
+                      title={get(node, 'frontmatter.title') || node.fields.slug}
+                      key={node.fields.slug}
+                    />
+                  </li>
+                ))}
+            </ul>
+            <Link to="/blog">Read More</Link>
           </div>
         </Layout>
       )

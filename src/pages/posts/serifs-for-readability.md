@@ -1,9 +1,10 @@
 ---
 title: Serifs for Readability
-date: "2019-08-31T22:12:03.284Z"
+date: '2019-08-31T22:12:03.284Z'
+subtitle: On readability and legibility
 ---
 
-In the midst of upgrading my site from Gatsby v1 to v2, I noticed I really didn't like my typeface choices for body text like this blog post. After playing around with several options I realized what was wrong: *my site's body text was in a sans serif typeface*. It turns out serif typefaces are the superior choice for readability.
+In the midst of upgrading my site from Gatsby v1 to v2, I noticed I really didn't like my typeface choices for body text like this blog post. After playing around with several options I realized what was wrong: _my site's body text was in a sans serif typeface_. It turns out serif typefaces are the superior choice for readability.
 
 ## Remind me again...
 
