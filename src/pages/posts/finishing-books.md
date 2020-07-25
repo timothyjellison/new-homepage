@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Finishing Books
+subtitle: Removing distractions and learning to read creatively
 date: 2020-07-25T20:54:53.749Z
 ---
 Lately I've been having trouble finishing books. I start a lot of books because I'm a curious person and my slow-paced, quiet-loving temperament has been well suited (for most of my life) to engaging with text. But more and more often I'll tire of a book before completing the first fifty pages, and I'll set it aside to start another, and that process repeats *ad nauseum*. 
