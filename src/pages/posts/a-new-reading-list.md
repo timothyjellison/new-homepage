@@ -50,3 +50,5 @@ Stevie Smith
 Thom Gunn  
 
 I'm more inclined to start by digging into the lesser knowns -- less known to me at least. Maybe start with Stevie Smith? Or W.D. Snodgrass? I'm kind of fascinated by Max Ritvo. He and I were studying at Yale at the same time, and though I'm sure we never met before his death I'm also sure there's no way we didn't cross paths, maybe attended the same readings or lectures. I'm not certain what to do, but I'm excited to be beginning again.
+
+*(This originally appeared in my blog Tim Reads Poetry)*
