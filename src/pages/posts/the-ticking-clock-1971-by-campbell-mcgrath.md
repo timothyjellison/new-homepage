@@ -2,7 +2,7 @@
 layout: blog
 title: '"The Ticking Clock (1971)" by Campbell McGrath'
 subtitle: History as names without dates
-date: 2020-07-28T13:39:42.128Z
+date: 2015-09-15T13:39:00.000Z
 ---
 I'll look deeper into "The Ticking Clock (1971)" by Campbell McGrath over the next few days. This comes from the latest issue of [The American Poetry Review](https://www.aprweb.org/); I urge you to check them out and consider getting a subscription. Anyway, here's the poem:
 
