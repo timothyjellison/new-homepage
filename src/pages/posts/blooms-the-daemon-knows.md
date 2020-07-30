@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Bloom's "The Daemon Knows"
+title: Harold Bloom's "The Daemon Knows"
 subtitle: My one encounter with Harold Bloom during my Yale days
 date: 2015-06-10T16:22:00.000Z
 ---
