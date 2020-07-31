@@ -4,7 +4,7 @@ title: My Tippet — only Tulle —
 subtitle: Digging into another Emily Dickinson poem
 date: 2015-06-09T15:48:00.000Z
 ---
-*(This post originally appeared in my blog Tim Reads Poetry)*
+*(This post originally appeared on my blog Tim Reads Poetry)*
 
 > My Tippet — only Tulle —
 
