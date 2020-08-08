@@ -14,7 +14,7 @@ export default () => (
       <h1 className={styles.header}>
         Timothy Ellison
         <br />
-        <small>Front End Web Developer</small>
+        <small>Software Engineer</small>
       </h1>
       <div className={styles.socialIcons}>
         <LilHook href="https://github.com/timothyjellison">
@@ -31,8 +31,8 @@ export default () => (
     <p className={styles.body}>
       At <LilHook href="https://jobs.netflix.com/">Netflix</LilHook> I build web
       apps used by translators around the world to create subtitles. In my work
-      I value utility and simplicity above all else. Besides front-end web
-      development my passions are reading literature and philosophy, playing and
+      I value utility, simplicity, and clarity above all else. Besides software 
+      my passions are reading literature and philosophy, playing and
       listening to music, and cooking.
     </p>
   </>
