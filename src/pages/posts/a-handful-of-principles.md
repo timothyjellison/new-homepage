@@ -8,7 +8,7 @@ Codes (as in moral codes) and guidelines have been top-of-mind for me lately, pr
 
 We live in lawless times. The rule of law strains under aggressive ignorance and cynicism. As individuals there's not much we can do to turn the national tide but we can find purpose and strength in principles.
 
-Principles are words we live by. Living by our words means believing that language has meaning and that rational thought backed by virtuous action leads to a better life for individuals and communities. Be smart. Do good.
+Principles are words we live by. Living by our words means believing that language has meaning and that rational thought backed by virtuous action leads to a better life for individuals and communities.
 
 Here are some words I'm choosing to live by.
 
@@ -16,15 +16,11 @@ Here are some words I'm choosing to live by.
 
 Literally. For those like myself who are lucky enough to have a work-from-home arrangement during the pandemic, keeping our homes clean is a crucial part of staying sane and happy. On a larger scale — reduce, reuse, and recycle.
 
-And metaphorically. Don't hand in 80% complete work. Don't let your workspace get disorganized.
+And metaphorically. Don't hand in 80% complete work. Don't let your team get disorganized because you never share details on your work. Don't let your things or your people fall apart. Make things better. Be a healer.
 
 ## Read, write, and share your way out of ignorance and fear
 
-I've only found one reliable way to learn difficult material: read, take notes, refine your notes into something you can share, and then share. It's a virtuous cycle: others' writing becomes your reading, your writing becomes others' reading. *Ad infinitum.*
-
-
-
-## Take care of your friends
+I've only found one reliable way to learn difficult material: read, take notes, refine your notes into something you can share, and then share. It's a virtuous cycle: others' writing becomes your reading, your writing becomes others' reading. *Ad infinitum.* Now more than ever the world sees the entanglement of ignorance and fear. On the dark border of the unknown people make foolish and dangerous decisions. Our only hopes are the light of knowledge and the calming spirit of reason.
 
 ## Respect people enough to disagree with them openly
 
@@ -32,4 +28,4 @@ This is a new one for me personally. Netflix's culture of open feedback has brou
 
 ## Listen to your heart
 
-This sounds sappy but it's a solid principle for both moral and creative decision making. It demands that you seek quiet and open yourself to the anxieties, fears, passions, and dreams that find the courage to speak in that quiet space. The hardest thing to do is not rush in with solutions and plans. Just be receptive. Acknowledge what's in you and accept it for what it is. Listen. Then get back to work.
+This sounds sappy but it's a solid principle for both moral and creative decision making. It demands that you seek quiet and open yourself to the anxieties, fears, passions, and dreams that find the courage to speak in that quiet space. The hardest thing to do is not rush in with solutions and plans. Just be receptive. Acknowledge what's in you and accept it for what it is. Listen first, then take action.
