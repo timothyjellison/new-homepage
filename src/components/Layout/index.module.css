@@ -1,14 +1,19 @@
 .layout {
   display: grid;
   grid-template-columns:
-    minmax(0, auto) [column-start]
-    minmax(auto, 1200px) [column-end]
-    minmax(0, auto);
+    minmax(0, auto) [column-start] minmax(auto, 1200px) [column-end] minmax(0, auto);
   grid-template-rows: 50px auto 100px;
 }
 
-.layout main,
-.layout header {
+.header {
+  background: #e8505b;
+}
+
+.header a {
+  color: white;
+}
+
+.layout main {
   grid-column: column-start / column-end;
 }
 
@@ -19,12 +24,10 @@
 .grid {
   display: grid;
   grid-template-columns:
-    minmax(2em, auto) [content-start]
-    minmax(auto, 800px) [content-end]
-    minmax(2em, auto);
+    minmax(2em, auto) [content-start] minmax(auto, 800px) [content-end] minmax(2em, auto);
 }
 
-.grid > * {
+.grid>* {
   grid-column: content-start / content-end;
 }
 

@@ -1,8 +1,9 @@
 .navBar {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   padding: 0.5rem 0;
   font-size: 1.5rem;
+  align-items: center;
 }
 
 .navBar a:link,
@@ -12,4 +13,24 @@
   text-decoration: none;
   box-shadow: none;
   margin-right: 1rem;
+}
+
+.homeIcon {
+  padding-left: 0;
+}
+
+.sideIcon {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.sideIconActive {
+  background-color: #c83333;
+}
+
+@media screen and (max-width: 500px) {
+  .sideIcon {
+    display: none;
+  }
 }
