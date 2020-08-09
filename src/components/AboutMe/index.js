@@ -10,12 +10,17 @@ const LilHook = ({ href, children }) => (
 
 export default () => (
   <>
+    <h2>
+      Hi, I'm Tim 👋 I'm a software engineer specializing in web applications
+    </h2>
+    <p className={styles.body}>
+      At <LilHook href="https://jobs.netflix.com/">Netflix</LilHook> I build
+      tools used by translators around the world to create subtitles. In my work
+      I value utility, simplicity, and clarity above all else. Besides software
+      my passions are reading literature and philosophy, playing and listening
+      to music, and cooking.
+    </p>
     <div>
-      <h1 className={styles.header}>
-        Timothy Ellison
-        <br />
-        <small>Software Engineer</small>
-      </h1>
       <div className={styles.socialIcons}>
         <LilHook href="https://github.com/timothyjellison">
           <FaGithub />
@@ -28,12 +33,5 @@ export default () => (
         </LilHook>
       </div>
     </div>
-    <p className={styles.body}>
-      At <LilHook href="https://jobs.netflix.com/">Netflix</LilHook> I build web
-      apps used by translators around the world to create subtitles. In my work
-      I value utility, simplicity, and clarity above all else. Besides software 
-      my passions are reading literature and philosophy, playing and
-      listening to music, and cooking.
-    </p>
   </>
 )

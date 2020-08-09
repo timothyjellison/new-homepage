@@ -22,9 +22,9 @@ class Layout extends React.PureComponent {
         <Helmet title="Timothy Ellison">
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </Helmet>
-        <div className={styles.layout}>
+        <div>
           <header className={`${styles.grid} ${styles.header}`}>
-            <NavBar />
+            <NavBar pathname={this.props.location.pathname} />
           </header>
           <main className={styles.grid}>{this.props.children}</main>
           <footer className={styles.grid}>
