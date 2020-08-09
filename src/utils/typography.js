@@ -3,7 +3,7 @@ import theme from 'typography-theme-parnassus'
 
 theme.overrideThemeStyles = () => ({
   a: {
-    color: '#e8505b',
+    color: '#50a7e8',
   },
 })
 
