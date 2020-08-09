@@ -14,11 +14,15 @@ Here are some words I'm choosing to live by.
 
 ## Don't make a mess
 
-Literal and metaphorical. For those like myself who are lucky enough to have a work-from-home arrangement during the pandemic, keeping our homes clean is a crucial part of staying sane and happy.
+Literally. For those like myself who are lucky enough to have a work-from-home arrangement during the pandemic, keeping our homes clean is a crucial part of staying sane and happy. On a larger scale — reduce, reuse, and recycle.
 
-## Read, write, and share your way out of ignorance
+And metaphorically. Don't hand in 80% complete work. Don't let your workspace get disorganized.
 
-I've only found one reliable way to learn difficult material: read, take notes, and refine your notes into something you can share.
+## Read, write, and share your way out of ignorance and fear
+
+I've only found one reliable way to learn difficult material: read, take notes, refine your notes into something you can share, and then share. It's a virtuous cycle: others' writing becomes your reading, your writing becomes others' reading. *Ad infinitum.*
+
+
 
 ## Take care of your friends
 
