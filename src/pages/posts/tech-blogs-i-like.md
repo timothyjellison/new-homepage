@@ -2,6 +2,9 @@
 layout: blog
 title: Tech Blogs I Like
 subtitle: Gotta give props
+tags:
+  - tech
+  - writing
 date: 2020-08-08T16:04:34.744Z
 ---
 [Julia Evans](https://jvns.ca/) is all about fundamentals: the command line, networking, career advice (i.e. the other networking). She's a thoughtful and entertaining writer and her massive back catalog of posts is worth reading through. She also sells her awesome zines over at [Wizard Zines](https://wizardzines.com/).
