@@ -16,5 +16,14 @@ The shell is the outermost layer around an operating system. In other words, the
 
 
 
-## Why would you want to change your shell?
+## Why would you want to change your login shell?
 
+There's a flip answer to that question and a legit answer. The flip answer is, often enough, the right answer for me.
+
+### The Flip Answer: Because It's There
+
+You own a computer. That computer can do millions of interesting things. This is one of those things. So why wouldn't you want to do it? Experiment. Read. Enjoy.
+
+### The Legit Answer: Because Things Change
+
+For myself, I moved from bash to zsh because my Mac told me to.
