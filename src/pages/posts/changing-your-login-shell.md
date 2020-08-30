@@ -61,3 +61,17 @@ Use the `chsh` command. The `-s` flag tells `chsh` that you’re passing the nam
 ```bash
 chsh -s /bin/zsh
 ```
+
+You'll be prompted for your password. Once the change is made go ahead and quit and restart your terminal application.
+
+## How can I check what shell I'm using now?
+
+Your shell's name is stored in the SHELL environment variable. To see it just run:
+
+```bash
+echo $SHELL
+```
+
+## I just changed my shell but `echo $SHELL` still lists my old shell — what's going on?
+
+You need to restart your terminal session. Remember that you've just changed your login shell, so you won't see the effect until you close out of your terminal and log in again.
