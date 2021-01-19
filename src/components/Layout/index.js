@@ -19,7 +19,7 @@ class Layout extends React.PureComponent {
   render() {
     return (
       <>
-        <Helmet title="Timothy Ellison">
+        <Helmet title="Tim Ellison: Software Engineer">
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </Helmet>
         <div>
