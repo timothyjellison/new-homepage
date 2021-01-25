@@ -14,7 +14,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   // Generate pages for individual blog posts
   return new Promise((resolve, reject) => {
-    const blogPostTemplate = path.resolve('./src/templates/blog-post.js')
+    const blogPostTemplate = path.resolve('./src/components/BlogPostTemplate/index.js')
     resolve(
       graphql(
         `

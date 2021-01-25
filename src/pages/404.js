@@ -1,11 +1,12 @@
+/*
+ * Generic 404 page
+ */
 import React from 'react'
 import Layout from '../components/Layout'
 
-export default props => (
-  <Layout location={props.location}>
-    <div>
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </div>
+export default ({ location }) => (
+  <Layout location={location}>
+    <h1>Page not found</h1>
+    <p>Head back <a href="/">home</a> or check out my <a href="./blog">blog</a></p>
   </Layout>
 )

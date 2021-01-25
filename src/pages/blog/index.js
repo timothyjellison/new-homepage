@@ -1,8 +1,19 @@
+/*
+ * Main page for my blog
+ */
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import get from 'lodash/get'
-import BlogPostExcerpt from '../../components/BlogPostExcerpt'
+import Link from 'gatsby-link'
 import Layout from '../../components/Layout'
+import styles from './index.module.css'
+
+export const BlogPostExcerpt = ({ url, title, date }) => (
+  <Link to={url} className={styles.excerpt}>
+    <h3>{title}</h3>
+    {date && <time>{date}</time>}
+  </Link>
+)
 
 export default ({ location, data }) => (
   <StaticQuery
