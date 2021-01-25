@@ -1,7 +1,22 @@
 import React from 'react'
-import CodePen from '../../components/CodePen'
 import Layout from '../../components/Layout'
-import styles from '../../templates/blog-post.module.css'
+import styles from '../../components/BlogPostTemplate/index.module.css'
+
+const CodePen = ({ title, uid }) => {
+  return (
+    <iframe
+      height='300'
+      scrolling='no'
+      title={title}
+      src={`//codepen.io/timothyjellison/embed/${uid}/?height=300&theme-id=16490&default-tab=html,result&embed-version=2`}
+      frameBorder='no'
+      allowTransparency='true'
+      allowFullScreen='true'
+      style={{width: '100%', marginBottom: '1.5em'}}
+    >See the Pen <a href={`https://codepen.io/timothyjellison/pen/${uid}/`}>{title}</a> by Tim Ellison (<a href='https://codepen.io/timothyjellison'>@timothyjellison</a>) on <a href='https://codepen.io'>CodePen</a>.
+    </iframe>
+  );
+}
 
 export default props => {
   return (
