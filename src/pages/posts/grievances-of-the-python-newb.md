@@ -1,0 +1,33 @@
+---
+layout: blog
+title: Grievances of the Python Newb
+subtitle: test
+tags:
+  - python
+date: 2021-02-14T14:22:50.370Z
+---
+
+I've recently kicked off my first python projects and find some of it unintuitive. I'm coming from the frontend web development and Node backend development worlds, so it's really basic stuff. This blog post will be a living FAQ / WTF document as I figure some of this basic stuff out and leave breadcrumbs for others along the way.
+
+## Should I start with Python 2 or Python 3?
+
+Unless you've got a job that you specifically need to learn Python 2 for, start learning Python 3.
+
+## How do I ensure my command line always uses Python 3 and not Python 2?
+
+If I start a repl or run a script with the `python` command it use Python 2. And if my script imported another script it creates a `.pyc` file, which isn't the standard in Python 3. To use Python 3 I have to use the `python3` command, which seems dumb.
+
+So in my shell profile (in my case `.zshrc` since I'm a `zsh` user) I set an alias that always replaces `python` with `python3`.
+
+```bash
+alias python='python3'
+```
+
+## What are all these `.pyc` and `__pycache__` files that are being added to my project?
+
+These are precompiled (i.e. binary) versions of the scripts you import. So if a.py imports b.py, the first time you run `python a` you'll see that python creates `b.pyc` or `__pycache__` to speed up future iterations. These don't have to go into version control, so you can go ahead and add these lines to your `.gitignore`:
+
+```
+*.pyc
+__pycache__/
+```
