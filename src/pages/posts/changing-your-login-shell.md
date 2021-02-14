@@ -37,10 +37,6 @@ cat etc/shells
 On my machine this returns a list:
 
 ```
-# List of acceptable shells for chpass(1).
-# Ftpd will not allow users to connect who are not using
-# one of these shells.
-
 /bin/bash
 /bin/csh
 /bin/dash
