@@ -51,15 +51,8 @@ export default ({ location, data }) => (
                   key={node.fields.slug}
                   subtitle={node.frontmatter.subtitle}
                 />
-              ))}
-
-            {/* hardcoding in this one exception to the default blog flow */}
-            <BlogPostExcerpt
-              url={'/posts/bokeh-backgrounds-with-css-doodle/'}
-              title={'Bokeh Backgrounds With CSS Doodle'}
-              date={'May 27, 2018'}
-              subtitle="A short tutorial using web components"
-            />
+              ))
+            }
           </div>
         </Layout>
       )

@@ -3,14 +3,7 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createRedirect, createPage } = actions
-
-  createRedirect({
-    fromPath: '/2018/05/27/bokeh-backgrounds-with-css-doodle/',
-    isPermanent: true,
-    redirectInBrowser: true,
-    toPath: '/posts/bokeh-backgrounds-with-css-doodle/',
-  })
+  const { createPage } = actions
 
   // Generate pages for individual blog posts
   return new Promise((resolve, reject) => {

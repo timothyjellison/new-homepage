@@ -1,7 +1,7 @@
 .navBar {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 0;
+  padding: 2rem 0;
   font-size: 1.5rem;
   align-items: center;
 }
@@ -12,21 +12,21 @@
 .navBar a:active {
   text-decoration: none;
   box-shadow: none;
-  margin-right: 1rem;
 }
 
 .homeIcon {
   padding-left: 0;
+  font-size: 2em;
+  font-family: Arial, sans-serif;
 }
 
-.sideIcon {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: 5px;
-}
-
-.sideIconActive {
-  background-color: #4084b7;
+.links {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-family: sans-serif;
+  text-align: end;
 }
 
 @media screen and (max-width: 500px) {

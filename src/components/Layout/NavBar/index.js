@@ -9,26 +9,16 @@ export default ({ pathname }) => (
     <Link to={'/'} className={styles.homeIcon}>
       Tim Ellison
     </Link>
-    <div className="links">
-      <Link
-        to={'/'}
-        className={cx({
-          [styles.sideIcon]: true,
-          [styles.sideIconActive]: pathname === '/',
-        })}
-      >
-        <FaHome />
-      </Link>
-      <Link
-        to="/blog"
-        className={cx({
-          [styles.sideIcon]: true,
-          [styles.sideIconActive]:
-            pathname === '/blog' || pathname.includes('/posts'),
-        })}
-      >
-        <FaFileAlt />
-      </Link>
+    <div className={styles.links}>
+      <a href="https://github.com/timdotbiz/" target="_blank" rel="noreferrer noopener">
+        Github
+      </a>
+      <a href="https://codepen.io/tlls1" target="_blank" rel="noreferrer noopener">
+        CodePen
+      </a>
+      <a href="https://www.linkedin.com/in/timothyjellison/" target="_blank" rel="noreferrer noopener">
+        LinkedIn
+      </a>
     </div>
   </nav>
 )
