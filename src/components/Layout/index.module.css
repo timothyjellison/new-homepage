@@ -1,6 +1,6 @@
 .layout {
   display: grid;
-  grid-template-columns: minmax(0, auto) [column-start] minmax(auto, 1200px) [column-end] minmax(
+  grid-template-columns: minmax(0, auto) [column-start] minmax(auto, 800px) [column-end] minmax(
       0,
       auto
     );
@@ -25,24 +25,14 @@
 
 .grid {
   display: grid;
-  grid-template-columns: minmax(2em, auto) [content-start] minmax(auto, 800px) [content-end] minmax(
-      2em,
+  grid-template-columns: minmax(1em, auto) [content-start] minmax(auto, 600px) [content-end] minmax(
+      1em,
       auto
     );
 }
 
 .grid > * {
   grid-column: content-start / content-end;
-}
-
-.layout main {
-  padding-top: 2rem;
-  margin-bottom: 4rem;
-}
-
-.layout footer {
-  background: #50a7e8;
-  color: white;
 }
 
 .copyright {

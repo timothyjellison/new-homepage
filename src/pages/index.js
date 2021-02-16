@@ -21,7 +21,6 @@ export default ({ location }) => (
     query={graphql`
       {
         allMarkdownRemark(
-          limit: 5
           sort: { fields: [frontmatter___date], order: DESC }
         ) {
           edges {
@@ -43,9 +42,9 @@ export default ({ location }) => (
 
       return (
         <Layout location={location}>
-          <h2>
+          <p>
             Hi, I'm Tim 👋 I'm a software engineer specializing in web applications
-          </h2>
+          </p>
           <p className={styles.body}>
             At <LilHook href="https://jobs.netflix.com/">Netflix</LilHook> I build
             tools used by translators around the world to create subtitles. In my work
@@ -54,33 +53,18 @@ export default ({ location }) => (
             to music, and cooking.
           </p>
           <div>
-            <div className={styles.socialIcons}>
-              <LilHook href="https://github.com/timdotbiz">
-                <FaGithub />
-              </LilHook>
-              <LilHook href="https://www.linkedin.com/in/timothyjellison/">
-                <FaLinkedinIn />
-              </LilHook>
-              <LilHook href="https://codepen.io/tlls1">
-                <FaCodepen />
-              </LilHook>
-            </div>
-          </div>
-          <div>
-            <h2>Latest Blog Posts</h2>
+            <h2>Blog Posts</h2>
             <ul>
-              {!!posts.length &&
-                posts.map(({ node }) => (
-                  <li>
-                    <BlogPostExcerpt
-                      url={node.fields.slug}
-                      title={get(node, 'frontmatter.title') || node.fields.slug}
-                      key={node.fields.slug}
-                    />
-                  </li>
-                ))}
+              {posts.map(({ node }) => (
+                <li>
+                  <BlogPostExcerpt
+                    url={node.fields.slug}
+                    title={get(node, 'frontmatter.title') || node.fields.slug}
+                    key={node.fields.slug}
+                  />
+                </li>
+              ))}
             </ul>
-            <Link to="/blog">Read More</Link>
           </div>
         </Layout>
       )

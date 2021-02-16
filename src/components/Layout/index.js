@@ -33,7 +33,7 @@ const Layout = ({ location: { pathname }, children }) => {
         </header>
         <main className={styles.grid}>{children}</main>
         <footer className={styles.grid}>
-          <p className={styles.copyright}>&copy; 2018 Tim Ellison</p>
+          <p className={styles.copyright}>&copy; Tim Ellison</p>
         </footer>
       </div>
     </>
