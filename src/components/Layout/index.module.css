@@ -17,6 +17,7 @@
 
 .layout main {
   grid-column: column-start / column-end;
+  padding-top: 3em;
 }
 
 .layout footer {
