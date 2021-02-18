@@ -15,7 +15,7 @@ Python 3, unless you've got a job that you specifically requires you to learn Py
 
 ## How do I ensure my command line always uses Python 3 and not Python 2?
 
-If I start a repl or run a script with the `python` command it use Python 2. And if my script imported another script it creates a `.pyc` file, which isn't the standard in Python 3. To use Python 3 I have to use the `python3` command, which seems dumb.
+On my Mac, if I start a repl or run a script with the `python` command it use Python 2. To use Python 3 I have to use the `python3` command, which seems dumb.
 
 So in my shell profile (in my case `.zshrc` since I'm a `zsh` user) I set an alias that always replaces `python` with `python3`.
 
@@ -25,14 +25,14 @@ alias python='python3'
 
 ## What are all these `.pyc` and `__pycache__` files that are being added to my project?
 
-These are precompiled (i.e. binary) versions of the scripts you import. So if a.py imports b.py, the first time you run `python a` you'll see that python creates `b.pyc` or `__pycache__` to speed up future iterations. These don't have to go into version control, so you can go ahead and add these lines to your `.gitignore`:
+These are precompiled (i.e. binary) versions of the scripts you import. So if a.py imports b.py, the first time you run `python a` you'll see that python creates `b.pyc` (for Python 2) or `__pycache__` (for Pythong 3) to speed up future iterations. These don't have to go into version control, so you can go ahead and add these lines to your `.gitignore`:
 
 ```
 *.pyc
 __pycache__/
 ```
 
-## How do I create and import a modules?
+## How do I create and import modules?
 
 One typical flaw in any language's intro tutorials is that all the example code goes into one long script, which is not how a professional software engineer usually thinks. Professionals want to separate their code into succinct, testable modules.
 
