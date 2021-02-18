@@ -11,7 +11,7 @@ I've recently kicked off my first python projects and find some of it unintuitiv
 
 ## Should I start with Python 2 or Python 3?
 
-Unless you've got a job that you specifically need to learn Python 2 for, start learning Python 3.
+Python 3, unless you've got a job that you specifically requires you to learn Python 2.
 
 ## How do I ensure my command line always uses Python 3 and not Python 2?
 
@@ -30,4 +30,29 @@ These are precompiled (i.e. binary) versions of the scripts you import. So if a.
 ```
 *.pyc
 __pycache__/
+```
+
+## How do I create and import a modules?
+
+One typical flaw in any language's intro tutorials is that all the example code goes into one long script, which is not how a professional software engineer usually thinks. Professionals want to separate their code into succinct, testable modules.
+
+Here's how to create a module. Make a directory and put an empty file called `__init__.py` in it:
+
+```
+mydirectory/
+  __init__.py
+```
+
+Now `mydirectory` is a module. Put a python file with some functions inside it:
+
+```
+mydirectory/
+  __init__.py
+  myscripts.py
+```
+
+Now in your other python scripts you can import that module using the `import` keyword:
+
+```python
+import mydirectory.myscripts
 ```
