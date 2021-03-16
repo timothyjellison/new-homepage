@@ -43,14 +43,14 @@ export default ({ location }) => (
       return (
         <Layout location={location}>
           <p>
-            Hi, I'm Tim 👋 I'm a software engineer specializing in web applications
+            Hi, I'm Tim 👋 I'm a software engineer specializing in enterprise web applications
           </p>
           <p className={styles.body}>
             At <LilHook href="https://jobs.netflix.com/">Netflix</LilHook> I build
             tools used by translators around the world to create subtitles. In my work
-            I value utility, simplicity, and clarity above all else. Besides software
-            my passions are reading literature and philosophy, playing and listening
-            to music, and cooking.
+            I value utility, simplicity, and clarity above all else. I'm passionate about
+            automated testing, documentation practices, communication tools, and
+            operations visibility — anything that helps developers help themselves.
           </p>
           <div>
             <h2>Blog Posts</h2>
