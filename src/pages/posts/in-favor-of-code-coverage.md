@@ -10,29 +10,29 @@ date: 2021-03-16
 
 ## Team Culture is a Reflection of Individual Personalities
 
-When we talk about culture in a softare engineering team, there are really only a few dimensions that have to do with the hands-on-keyboards part of software engineering. Among those are these common safeguards of quality:
+When we talk about culture in a software engineering team, there are really only a few dimensions that have to do with the hands-on-keyboards part of software engineering. Among those are these common safeguards of quality:
 
-- Does the team review pull requests?
-- Does the team have a common linting strategy?
-- Does the team write automated tests?
+- Pull request reviews
+- Linting
+- Automated tests
 
-In answering these three questions you can learn a lot about your fellow engineers' worldview.
+Learning which of these your fellow engineers trust tells you a lot about their worldview.
 
 If you rely solely on pull request reviews, you see yourself as a superhero. The only thing that stands between the team and chaos is your vigilant eye. 
 
-Add in a linter that enforces good pratices and consistent syntax choices and you've shown you're willing to set aside a little control. You're a superhero who's willing to have a robot sidekick who sweats the small stuff. This isn't much of a leap.
+Add in a linter that enforces good pratices and consistent syntax choices and you've shown you're willing to set aside a little control. You're a superhero who's willing to have a robot sidekick who sweats the small stuff. This isn't much of a leap, though.
 
 Now add in automated tests. This is a game changer. By ceding control to a test you're acknowledging that the code is the safeguard of its own quality, not you. A team that trusts in testing stops being a scrappy band of misfit superheros and becomes something much more professional and powerful.
 
 ## Culture is the Game We Choose to Play
 
-Code coverage gets a bad rap. Common criticisms include:
+Among the FAANG engineers I've worked with, code coverage has a bad reputation. Common criticisms include:
 
 - It's easy to fool a code coverage tool. Just because you have a test that exercises a line of code doesn't mean it's a good test.
 - Code coverage slows down development. There's nothing worse that having to hotfix a bug but your new code won't build because it only has 79.5% code coverage when you're supposed to have 80%.
 - Code coverage gives false confidence. It's easy to confuse good numbers with good quality.
 
-I had a three year period where I decided to accept these arguments and take code coverage out of my toolkit. I'm now of the opinion that this is a bad idea. Let's take those criticisms one by one and look at how they're garbage.
+For a few years I accepted these arguments and took code coverage out of my toolkit, but I'm now of the opinion that this is a bad idea. Let's take those criticisms one by one and look at how they're garbage.
 
 1) Yes, you can fool a code coverage tool. But why assume that your fellow engineers are only going to do the bare minimum? This attitude shows a lack of trust in your colleagues, which is a much bigger problem than coding practicies. It's better for your colleague to have written a test that you can review and criticize than for them not to have written a test at all.
 2) Yes, code coverage slows down development. But for most businesses that don't want to crash and burn it's better to move a little more slowly and ship a reliable product than to move quickly and ship a shaky product that has to be hotfixed again and again and again.
