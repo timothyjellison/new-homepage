@@ -4,10 +4,10 @@ title: Grievances of the Python Newb
 subtitle: test
 tags:
   - python
-date: 2021-02-14T14:22:50.370Z
+date: 2021-02-14
 ---
 
-I've recently kicked off my first python projects and find some of it unintuitive. I'm coming from the frontend web development and Node backend development worlds, so it's really basic stuff. This blog post will be a living FAQ / WTF document as I figure some of this basic stuff out and leave breadcrumbs for others along the way.
+I've recently kicked off my first Python projects and find some of it unintuitive. I'm coming from the frontend web development and Node backend development worlds, so it's really basic stuff that's throwing me. This blog post will be a living FAQ / WTF document as I figure some of this basic stuff out and leave breadcrumbs for others along the way.
 
 ## Should I start with Python 2 or Python 3?
 
@@ -23,12 +23,15 @@ So in my shell profile (in my case `.zshrc` since I'm a `zsh` user) I set an ali
 alias python='python3'
 ```
 
-## What are all these `.pyc` and `__pycache__` files that are being added to my project?
+## What are all these `__pycache__` folders that are being added to my project?
 
-These are precompiled (i.e. binary) versions of the scripts you import. So if a.py imports b.py, the first time you run `python a` you'll see that python creates `b.pyc` (for Python 2) or `__pycache__` (for Pythong 3) to speed up future iterations. These don't have to go into version control, so you can go ahead and add these lines to your `.gitignore`:
+These are precompiled (i.e. binary) versions of the scripts you import. So if a.py imports b.py, the first time you run `python a` you'll see that Python creates `__pycache__` to make your code a little faster the next time you run it. 
+
+## Should `__pycache__` files go into version control?
+
+No. So you can go ahead and add these lines to your `.gitignore`:
 
 ```
-*.pyc
 __pycache__/
 ```
 
