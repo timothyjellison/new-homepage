@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../Layout'
-import styles from './index.module.css'
 
 export default ({
   data: {
@@ -13,11 +12,9 @@ export default ({
   location,
 }) => (
   <Layout location={location}>
-    <div className={styles.blogPost}>
-      <h1>{title}</h1>
-      <time>{date}</time>
-      <article dangerouslySetInnerHTML={{ __html: html }} />
-    </div>
+    <h1>{title}</h1>
+    <time>{date}</time>
+    <article dangerouslySetInnerHTML={{ __html: html }} />
   </Layout>
 )
 

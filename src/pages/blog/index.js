@@ -10,7 +10,7 @@ import styles from './index.module.css'
 
 export const BlogPostExcerpt = ({ url, title, date }) => (
   <Link to={url} className={styles.excerpt}>
-    <h3>{title}</h3>
+    <span>{title}</span>
     {date && <time>{date}</time>}
   </Link>
 )

@@ -1,27 +1,9 @@
-.layout {
-  display: grid;
-  grid-template-columns: minmax(0, auto) [column-start] minmax(auto, 800px) [column-end] minmax(
-      0,
-      auto
-    );
-  grid-template-rows: 50px auto 100px;
-}
-
 .header {
   background: #7ac196;
 }
 
 .header a {
   color: white;
-}
-
-.layout main {
-  grid-column: column-start / column-end;
-  padding-top: 3em;
-}
-
-.layout footer {
-  grid-column: 1 / 4;
 }
 
 .grid {

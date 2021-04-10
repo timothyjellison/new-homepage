@@ -65,7 +65,59 @@ table {
   margin-top: 1rem;
 } */
 
-p {
+p,
+ul {
 	padding-bottom: 1rem;
 	line-height: 1.2;
+}
+
+main {
+	padding-top: 3rem;
+}
+
+h1, h2, h3 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: xx-large;
+}
+
+h2 {
+	font-size: x-large;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+}
+
+h3 {
+	font-size: large;
+	padding-bottom: 1rem;
+}
+
+time {
+	font-style: italic;
+	line-height: 3;
+	padding-bottom: 1rem;
+}
+
+article {
+	padding-top: 1rem;
+}
+
+a {
+	color: #7ac196;
+}
+
+ul {
+	list-style: disc;
+	margin-left: 1rem;
+}
+
+ol {
+	margin-left: 1rem;
+	list-style: decimal;
+}
+
+li {
+	padding-bottom: 0.5rem;
 }
