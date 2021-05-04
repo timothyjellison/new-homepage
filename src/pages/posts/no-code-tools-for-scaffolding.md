@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: No Code Tools for Scaffolding
+title: No-Code Tools for Scaffolding
 date: 2021-04-16
 ---
 
