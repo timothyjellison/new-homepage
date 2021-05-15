@@ -3,7 +3,6 @@
  */
 import React, { useEffect } from 'react'
 import Helmet from 'react-helmet'
-import styles from './index.module.css'
 import NavBar from './NavBar'
 
 const Layout = ({ location: { pathname }, children }) => {
@@ -27,13 +26,13 @@ const Layout = ({ location: { pathname }, children }) => {
       <Helmet title="Tim Ellison: Software Engineer">
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Helmet>
-      <div>
-        <header className={`${styles.grid} ${styles.header}`}>
+      <div className="container mx-auto max-w-screen-sm">
+        <header className="bg-green-400 text-white">
           <NavBar pathname={pathname} />
         </header>
-        <main className={styles.grid}>{children}</main>
-        <footer className={styles.grid}>
-          <p className={styles.copyright}>&copy; Tim Ellison</p>
+        <main>{children}</main>
+        <footer>
+          <p className="text-center p-4">&copy; Tim Ellison</p>
         </footer>
       </div>
     </>
