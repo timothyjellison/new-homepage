@@ -12,9 +12,9 @@ export default ({
   location,
 }) => (
   <Layout location={location}>
-    <h1>{title}</h1>
+    <h1 className="text-3xl">{title}</h1>
     <time>{date}</time>
-    <article dangerouslySetInnerHTML={{ __html: html }} />
+    <article dangerouslySetInnerHTML={{ __html: html }} className="max-w-prose"/>
   </Layout>
 )
 

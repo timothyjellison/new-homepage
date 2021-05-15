@@ -6,10 +6,10 @@ import { StaticQuery, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Link from 'gatsby-link'
 import Layout from '../../components/Layout'
-import styles from './index.module.css'
+// import styles from './index.module.css'
 
 export const BlogPostExcerpt = ({ url, title, date }) => (
-  <Link to={url} className={styles.excerpt}>
+  <Link to={url}>
     <span>{title}</span>
     {date && <time>{date}</time>}
   </Link>

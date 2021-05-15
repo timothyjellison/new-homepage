@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  @apply p-3 pt-8;
+}
+
+article {
+  @apply pt-6;
+}
+
+article h2 {
+  @apply leading-relaxed;
+}
+
+article ul {
+  @apply list-disc ml-4;
+}
+
+article ol {
+  @apply list-decimal ml-4;
+}
+
+p {
+  @apply mb-4;
+}

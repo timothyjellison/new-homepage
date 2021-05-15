@@ -3,12 +3,9 @@
  */
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
-import { FaLinkedinIn, FaGithub, FaCodepen } from 'react-icons/fa'
 import { BlogPostExcerpt } from './blog'
 import Layout from '../components/Layout'
-import styles from './index.module.css'
 
 const LilHook = ({ href, children }) => (
   <a href={href} target="_blank" rel="noreferrer noopener">
@@ -45,7 +42,7 @@ export default ({ location }) => (
           <p>
             Hi, I'm Tim 👋 I'm a software engineer specializing in enterprise web applications
           </p>
-          <p className={styles.body}>
+          <p>
             At <LilHook href="https://jobs.netflix.com/">Netflix</LilHook> I build
             tools used by translators around the world to create subtitles. In my work
             I value utility, simplicity, and clarity above all else. I'm passionate about
